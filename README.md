@@ -1,4 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## About my project
+## Code Institute Portfolio Project 2 covering Javascript, HTML and CSS 
+
+<h1 align="center">Sunhill Adventures Website</h1>
 
 Welcome to my repository for PP2,
 
@@ -11,6 +14,20 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 `python3 -m http.server`
 
 ------
+
+
+## Index
+* [User Experience (UX)](#user-experience-ux) 
+* [Features](#features)
+* [Design](#design)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Gitpod Reminders](#gitpod-reminders)
+* [Credits](#credits)
+* [Release History ](#release-history)
+
+## Project Goals
 
 My goals have been to:
 1) develop a website which 
@@ -26,6 +43,24 @@ My goals have been to:
 11) Bootstrap's powerful, feature-packed frontend toolkit.
 
 ------
+
+## User Experience (UX)
+
+-   ### User stories
+
+    -   #### A. First Time Visitor Goals
+
+            1. As a First Time Visitor, I want to understand the main purpose of the site and learn more about the organisation.
+
+## Features
+* [Back to index](#index) 
+* [Back to top of README.md](#about-my-project) 
+
+
+### Existing Features
+
+-   __F01 Navigation Bar__
+
 
 ## Release History
 
