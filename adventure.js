@@ -1,3 +1,3 @@
 // This is the main JavaScript file
-let adventure = "begin";
+let adventure = "Your adventure starts here !";
 console.log(adventure);

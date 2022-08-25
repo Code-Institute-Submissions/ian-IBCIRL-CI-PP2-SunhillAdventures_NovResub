@@ -29,6 +29,9 @@ body {
     /*   float:left; */
     margin: 5%;
     padding: 5%;
+
+    display:grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 .btn {
@@ -43,4 +46,6 @@ body {
     color: wheat;
     width: 90%;
     max-width: 90%;
+    box-shadow: 10 10 30px 20px;
+
 }
