@@ -37,3 +37,10 @@ body {
     margin: 2%;
     padding: 5%;
 }
+
+.container {
+    background-color: darkolivegreen;
+    color: wheat;
+    width: 90%;
+    max-width: 90%;
+}
