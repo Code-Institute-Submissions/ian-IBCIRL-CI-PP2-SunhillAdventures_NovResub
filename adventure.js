@@ -7,17 +7,13 @@ console.log("text element is:");
 console.log(textElement);
 console.log("text element innertext  is:");
 console.log(textElement.innerText);
-textElement.innerHTML = "Hello World!"
+textElement.innerHTML = "Hello World!!"
 console.log(textElement.innerHTML);
 
 var optionButtonsElement = document.getElementById('option-buttons');
 console.log(optionButtonsElement);
 console.log(optionButtonsElement.innerText);
 console.log(optionButtonsElement.innerHTML);
-console.log(optionButtonsElement.length);
+console.log("Inner Text Length is:", optionButtonsElement.innerText.length);
 
-for (var i = 0; i < optionButtonsElement.length ; i++) {
-    console.log("inside loop");
-    key = optionButtonsElement[i].innerText;
-        console.log(key);
-}
+for (i in optionButtonsElement.innerText){console.log(optionButtonsElement.innerText[i])}
