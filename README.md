@@ -173,9 +173,14 @@ Good results all round.
 ### Known bugs
 
 - None currently identified.
-Over the course of the project, 
-1) various layout issues with 
-    a) horizontal scrolling and more
+- Over the course of the project, 
+    1) various layout issues with 
+        - horizontal scrolling and more
+    2)  let textItem = textItems.find(o => o.item === TextItemNumber)
+        - took a while to get this array find code to work
+        - typo in o.item member name took a while to pin down (looking in the wrong place) 
+        - o is a placeholder and => is a function pointer
+        - helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
 
 
 ## Deployment
