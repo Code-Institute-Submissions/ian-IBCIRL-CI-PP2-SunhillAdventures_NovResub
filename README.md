@@ -27,7 +27,7 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 * [Deployment](#deployment)
 * [Gitpod Reminders](#gitpod-reminders)
 * [Credits](#credits)
-* [Release History ](#release-history)
+* [Release History ](#release-history) 
 
 ## Project Goals
 

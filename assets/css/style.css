@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|sans-serif&display=swap');
+
+@media screen {}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* baseline body styling */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#headertext{
+    text-align: center;
+}
+
+.btn-grid{
+    background-color: red;
+    float:left;
+    margin: 5%;
+    padding: 5%;
+}
+
+.btn{
+    color: white;
+    background-color: blue;
+}
