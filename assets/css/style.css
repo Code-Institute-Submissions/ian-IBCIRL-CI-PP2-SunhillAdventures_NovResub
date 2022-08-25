@@ -22,7 +22,7 @@ body {
 
 #headertext {
     text-align: center;
-}
+} 
 
 .btn-grid {
     background-color: red;
@@ -34,4 +34,6 @@ body {
 .btn {
     color: white;
     background-color: blue;
+    margin: 2%;
+    padding: 5%;
 }
