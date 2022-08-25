@@ -1,7 +1,10 @@
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css?family=Oswald|sans-serif&display=swap');
 
+/* initialise media screen size for later use*/
 @media screen {}
 
+/* default styling */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +12,7 @@
 }
 
 /* baseline body styling */
+/* using a flex box, centred at 100x100 vw x vh */
 body {
     margin: 0;
     padding: 0;
@@ -20,14 +24,15 @@ body {
     height: 100vh;
 }
 
+/* centre the header text with a decent margin */
 #headertext {
     text-align: center;
     margin: 2%;
 } 
 
+/* format and arrange the game buttons in a nice 2x2 grid */
 .btn-grid {
     background-color: red;
-    /*   float:left; */
     margin: 5%;
     padding: 5%;
     gap: 5%;
@@ -35,6 +40,7 @@ body {
     grid-template-columns: repeat(2, auto);
 }
 
+/* style the individual buttons */
 .btn {
     color: white;
     background-color: blue;
@@ -43,15 +49,15 @@ body {
     border: 5px solid lightsteelblue;
 }
 
+/* arrange a hover style for the mouse hovering a button */
 .btn:hover{
     border-color:   black;
 }
 
+/* style the overall container class */
 .container {
     background-color: darkolivegreen;
     color: wheat;
     width: 90%;
     max-width: 90%;
-    box-shadow: 10 10 30px 20px;
-
 }
