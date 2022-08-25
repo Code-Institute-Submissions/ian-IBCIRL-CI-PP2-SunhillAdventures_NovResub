@@ -213,6 +213,7 @@ On the command line, type "git clone" then paste in the copied url and press the
     - Github pages - https://github.com/
     - Bootstrap documentation https://getbootstrap.com/docs/4.6/getting-started/introduction/ 
     - I decided to start using bootstrap for this project
+    - found a decent random range generator https://www.educative.io/answers/how-to-generate-a-random-number-between-a-range-in-javascript 
 
 -   ### Images
     - Social media icon images from https://github.com/techtycho/microsoft-homepage-clone/tree/master/img
