@@ -50,12 +50,11 @@ function selectOption(option) {
 
 //function to show particular text item
 function showChosenTextItem(TextItemNumber) {
-    //get the desired text for describing the scene
-    const textItem2 = textItems.find(textItem => textItems.id === TextItemNumber)
-    var textItem = textItems.find(textItem => textItems.id === TextItemNumber)
-
-    textItem = textItems[0]
-    
+    // get the desired text for describing the scene
+    // array.find(function(currentValue, index, arr),thisValue)
+    let textItem = textItems.find(o => o.item === TextItemNumber)
+    console.log ("Text Item is: " , textItem)
+   
     //log the text for the element describing the scene
     console.log("Text Item is: ", textItem)
     console.log("Text Item Text is: ", textItem.text)
