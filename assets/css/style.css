@@ -22,6 +22,7 @@ body {
 
 #headertext {
     text-align: center;
+    margin: 2%;
 } 
 
 .btn-grid {
@@ -29,7 +30,7 @@ body {
     /*   float:left; */
     margin: 5%;
     padding: 5%;
-
+    gap: 5%;
     display:grid;
     grid-template-columns: repeat(2, auto);
 }
@@ -39,6 +40,11 @@ body {
     background-color: blue;
     margin: 2%;
     padding: 5%;
+    border: 5px solid lightsteelblue;
+}
+
+.btn:hover{
+    border-color:   black;
 }
 
 .container {
