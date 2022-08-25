@@ -3,9 +3,11 @@
 
 <h1 align="center">Sunhill Adventures Website</h1>
 
-Welcome to my repository for PP2,
+Welcome to my repository for PP2.
 
-The last update to this file was: **August 24th, 2022**
+This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
+
+The last update to this file was: **August 25th, 2022**
 
 ## Gitpod Reminders
 
