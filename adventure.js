@@ -68,6 +68,7 @@ const textItems = [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                setState: { roomlayout: true, hammer: false },
             },
             {
                 op: 2,
@@ -117,17 +118,19 @@ const textItems = [{
             op: 2,
             text: "Try to open the door.",
             nextText: 7,
+            setState: { dooropen: true, hammer: false },
+
         },
         {
             op: 3,
             text: "Stand up, and try to look out the window.",
             nextText: 8,
+            setState: { windowseen: true, hammer: false },
         },
         {
             op: 4,
             text: "Sit up.",
             nextText: 9,
-
         },
     ]
     },
@@ -142,6 +145,7 @@ const textItems = [{
     {
         item: 9,
         text: "As you sit up, you notice a loose section of flooring.",
+        setState: { floorloose: true, hammer: false },
         option: [{
             op: 1,
             text: "Stand up.",
@@ -151,6 +155,7 @@ const textItems = [{
             op: 2,
             text: "Try to move the flooring.",
             nextText: 7,
+            setState: { floorloose: true, hammer: true },
         },
         {
             op: 3,
