@@ -120,6 +120,7 @@ My goals have been to:
 -   [TinyPNG](https://tinypng.com/) to reduce the size of PNG images and improve Lighthouse score.
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-Adventure/)
+-   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
 
 ## Testing 
 * [Back to index](#index) 
@@ -181,6 +182,8 @@ Good results all round.
         - typo in o.item member name took a while to pin down (looking in the wrong place) 
         - o is a placeholder and => is a function pointer
         - helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
+    3)  had fun trying to add visuals for buttons and scenes.
+        - found helpful code here https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
 
 
 ## Deployment

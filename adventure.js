@@ -15,6 +15,9 @@ console.log(textElement.innerText);
 textElement.innerHTML = "Hello World!!"
 console.log(textElement.innerHTML);
 
+//getting the main div 
+const mainDiv = document.getElementById('maindiv');
+
 // start to access the options buttons and display some of their info to the console.
 var optionButtonsElement = document.getElementById('option-buttons');
 console.log(optionButtonsElement);
@@ -84,6 +87,17 @@ function showChosenTextItem(TextItemNumber) {
     //set the text for the element describing the scene
     textElement.innerText = textItem.text;
 
+    // set the background for the main div
+    urlLocation = textItem.Imgsrc
+    console.log ("URL location is: ", urlLocation)
+    urlLocation = "url('" + urlLocation + "')"
+    console.log ("URL location is: ", urlLocation)
+    
+    mainDiv.style.backgroundImage =  urlLocation;
+    // url('/assets/images/parquet1.PNG')
+    
+    // mainDiv.style.backgroundImage = "url('/assets/images/herringbone.PNG')";
+    
     const legtext = document.getElementById("legendtext")
     legtext.innerText = `scene #${textItem.item}`
     
@@ -93,12 +107,24 @@ function showChosenTextItem(TextItemNumber) {
     }
     textItem.option.forEach(option => {
         if (showOption(option)) {
+            // create a new button
             const button = document.createElement('button')
-            button.innerText = option.text
-            button.classList.add('btn')
-            button.addEventListener('click', () => selectOption(option))
-            optionButtonsElement.appendChild(button)
 
+            // set the text of the current action button
+            button.innerText = option.text
+
+            // set the style for the new button
+            button.classList.add('btn')
+
+            // set a function for clicking the button
+            button.addEventListener('click', () => selectOption(option))
+
+            // consider adding images
+            //button.style.backgroundImage = option.Imgsrc
+            // button.style.backgroundImage = "url('/assets/images/parquet1.PNG')";
+
+            // add the button to the page
+            optionButtonsElement.appendChild(button)
         }
     });
     //   }
@@ -133,10 +159,12 @@ function generateRandom(min = 0, max = 100) {
 const textItems = [{
         item: 1,
         text: "You wake up on a parquet wooden floor, in a small, dimly lit room.",
+        Imgsrc: "/assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                Imgsrc: "/assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -163,10 +191,12 @@ const textItems = [{
     {
         item: 2,
         text: "You wake up on a cold white marble floor, in a small, dimly lit room.",
+        Imgsrc: "/assets/images/coldwhitemarble.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                Imgsrc: "/assets/images/herringbone.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -193,11 +223,13 @@ const textItems = [{
     },
     {
         item: 3,
-        text: "You wake up on a green marble floor, in a small, dimly lit room.",
+        Imgsrc: "/assets/images/greenandwhitemarble.PNG",
+        text: "You wake up on a green and white marble floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                Imgsrc: "/assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -224,11 +256,13 @@ const textItems = [{
     },
     {
         item: 4,
+        Imgsrc: "/assets/images/roughlimestone.PNG",
         text: "You wake up on a rough limestone floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                Imgsrc: "/assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -257,9 +291,11 @@ const textItems = [{
     {
         item: 5,
         text: "You wake up on a cold pink granite floor, in a small, dimly lit room.",
+        Imgsrc: "/assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
+                Imgsrc: "/assets/images/parquet1.PNG",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
@@ -287,9 +323,11 @@ const textItems = [{
     {
         item: 6,
         text: "You see a narrow, barred window, high up on the wall in front of you. You also notice a low hanging light overhead, and a light switch beside a door behind you.",
+        Imgsrc: "/assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Stand up, avoiding the hanging light.",
+                Imgsrc: "/assets/images/parquet1.PNG",
                 nextText: 8,
             },
             {
@@ -353,6 +391,7 @@ const textItems = [{
         option: [{
                 op: 1,
                 text: "Look around",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
