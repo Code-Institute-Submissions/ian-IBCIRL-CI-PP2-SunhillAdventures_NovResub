@@ -56,6 +56,11 @@ function selectOption(option) {
         // get the next block of story text and options
         const nextTextChoiceItem = option.nextText
 
+        // option to restart game if end not successful
+        if (nextTextChoiceItem <= 0) {
+            return startGame()
+          }
+
         // update and replace the current state
         state = Object.assign(state, option.setState)
 
