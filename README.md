@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **August 25th, 2022**
+The last update to this file was: **August 26th, 2022**
 
 ## Gitpod Reminders
 
@@ -131,7 +131,7 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 <details><summary>WAVE Results</summary>
 <img src="./assets/images/wave results.JPG">
 </details>
--   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-Adventure/)
+-   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
 
 [HTML Validator](https://validator.w3.org/)
