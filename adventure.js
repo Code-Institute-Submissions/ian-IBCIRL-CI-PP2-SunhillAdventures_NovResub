@@ -159,12 +159,12 @@ function generateRandom(min = 0, max = 100) {
 const textItems = [{
         item: 1,
         text: "You wake up on a parquet wooden floor, in a small, dimly lit room.",
-        Imgsrc: "/assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "/assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -191,12 +191,12 @@ const textItems = [{
     {
         item: 2,
         text: "You wake up on a cold white marble floor, in a small, dimly lit room.",
-        Imgsrc: "/assets/images/coldwhitemarble.PNG",
+        Imgsrc: "./assets/images/coldwhitemarble.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "/assets/images/herringbone.PNG",
+                Imgsrc: "./assets/images/herringbone.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -223,13 +223,13 @@ const textItems = [{
     },
     {
         item: 3,
-        Imgsrc: "/assets/images/greenandwhitemarble.PNG",
+        Imgsrc: "./assets/images/greenandwhitemarble.PNG",
         text: "You wake up on a green and white marble floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "/assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -256,13 +256,13 @@ const textItems = [{
     },
     {
         item: 4,
-        Imgsrc: "/assets/images/roughlimestone.PNG",
+        Imgsrc: "./assets/images/roughlimestone.PNG",
         text: "You wake up on a rough limestone floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "/assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 setState: {
                     roomlayout: true,
                     hammer: false
