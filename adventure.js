@@ -22,6 +22,13 @@ console.log(optionButtonsElement.innerText);
 console.log(optionButtonsElement.innerHTML);
 console.log("Inner Text Length is:", optionButtonsElement.innerText.length);
 
+// react if mouse leaves the div (user may be leaving game)
+function waitDontGo(){
+    textElement.innerHTML = "Wait !!! Don't GO !"
+    console.log("Wait !!! Don't GO !")
+
+}
+
 // function to start the game.
 function startGame() {
 
