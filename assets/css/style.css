@@ -24,11 +24,57 @@ body {
     height: 100vh;
 }
 
+
+/* style the overall container class */
+.container {
+    background-color: blue;
+    color: wheat;
+    width: 90%;
+    max-width: 90%;
+}
+
 /* centre the header text with a decent margin */
 #headertext {
     text-align: center;
     margin: 2%;
-} 
+}
+
+.headertext {
+    background-color: darkolivegreen;
+}
+
+h1 {
+    color: wheat;
+    background: darkolivegreen;
+    display: inline-block;
+    margin: 5%;
+    padding: 5%;
+    border: 3px solid wheat;
+}
+
+#legendtext {
+    color: wheat;
+    background: darkolivegreen;
+    width: auto;
+    padding: 2%;
+}
+
+#scenetext {
+    padding: 2%;
+    color: wheat;
+    background: darkolivegreen;
+    text-align: center;
+}
+
+
+/*
+h1 {
+    background: red;
+    color: #fff;
+    padding: 0 20px;
+    display:inline-block; /*optional 
+  }
+*/
 
 /* format and arrange the game buttons in a nice 2x2 grid */
 .btn-grid {
@@ -36,8 +82,17 @@ body {
     margin: 5%;
     padding: 5%;
     gap: 5%;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, auto);
+}
+
+/* style the main central buttons */
+.btnheadertext {
+    color: darkolivegreen;
+    background-color: wheat;
+    margin: 2%;
+    padding: 5%;
+    border: 3px solid wheat;
 }
 
 /* style the individual buttons */
@@ -50,14 +105,6 @@ body {
 }
 
 /* arrange a hover style for the mouse hovering a button */
-.btn:hover{
-    border-color:   black;
-}
-
-/* style the overall container class */
-.container {
-    background-color: darkolivegreen;
-    color: wheat;
-    width: 90%;
-    max-width: 90%;
+.btn:hover {
+    border-color: black;
 }

@@ -89,18 +89,18 @@ function showChosenTextItem(TextItemNumber) {
 
     // set the background for the main div
     urlLocation = textItem.Imgsrc
-    console.log ("URL location is: ", urlLocation)
+    console.log("URL location is: ", urlLocation)
     urlLocation = "url('" + urlLocation + "')"
-    console.log ("URL location is: ", urlLocation)
-    
-    mainDiv.style.backgroundImage =  urlLocation;
+    console.log("URL location is: ", urlLocation)
+
+    mainDiv.style.backgroundImage = urlLocation;
     // url('/assets/images/parquet1.PNG')
-    
+
     // mainDiv.style.backgroundImage = "url('/assets/images/herringbone.PNG')";
-    
+
     const legtext = document.getElementById("legendtext")
     legtext.innerText = `scene #${textItem.item}`
-    
+
     //clear out the current options, and replace with the options for the current scene
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
