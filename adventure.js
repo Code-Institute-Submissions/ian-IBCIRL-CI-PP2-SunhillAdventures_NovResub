@@ -282,12 +282,12 @@ const textItems = [{
         option: [{
                 op: 1,
                 text: "Stand up, avoiding the hanging light.",
-                nextText: 6,
+                nextText: 8,
             },
             {
                 op: 2,
                 text: "Try to open the door.",
-                nextText: 7,
+                nextText: 11,
                 setState: {
                     dooropen: true,
                     hammer: false
@@ -297,7 +297,7 @@ const textItems = [{
             {
                 op: 3,
                 text: "Stand up, and try to look out the window.",
-                nextText: 8,
+                nextText: 10,
                 setState: {
                     windowseen: true,
                     hammer: false
@@ -398,11 +398,96 @@ const textItems = [{
             {
                 op: 4,
                 text: "Put your head in your hands and try to remember how you got here.",
-                nextText: 9,
+                nextText: generateRandom(1,5),
             },
         ]
     },
+    {
+        item: 10,
+        text: "You can just about see out the window and can see the sun rising in the east.",
+        option: [{
+            op: 1,
+            text: "Look around",
+            nextText: 6,
+            setState: {
+                timeofday: true
+            },
+        },
+        {
+            op: 2,
+            text: "Do nothing",
+            nextText: 7,
+        },
+        {
+            op: 3,
+            text: "Sit down again",
+            nextText: 9,
+        },
+        {
+            op: 4,
+            text: "Sit up.",
+            nextText: 9,
 
+        },
+    ]
+},
+{
+    item: 11,
+    text: "You reach the door and manage to open it gently inwards, although it squeaks loudly. You can hear footsteps coming from the right.",
+    option: [{
+        op: 1,
+        text: "Close the door",
+        nextText: 6,
+        setState: {
+            gaoleralerted: true
+        },
+    },
+    {
+        op: 2,
+        text: "Do nothing",
+        nextText: 7,
+    },
+    {
+        op: 3,
+        text: "Sit down again",
+        nextText: 9,
+    },
+    {
+        op: 4,
+        text: "Sit up.",
+        nextText: 9,
+
+    },
+]
+},    {
+    item: 12,
+    text: "You can just about see out the window and can see the sun rising in the east.",
+    option: [{
+        op: 1,
+        text: "Look around",
+        nextText: 6,
+        setState: {
+            timeofday: true
+        },
+    },
+    {
+        op: 2,
+        text: "Do nothing",
+        nextText: 7,
+    },
+    {
+        op: 3,
+        text: "Sit down again",
+        nextText: 9,
+    },
+    {
+        op: 4,
+        text: "Sit up.",
+        nextText: 9,
+
+    },
+]
+},
 ]
 
 
