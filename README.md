@@ -237,6 +237,8 @@ I have continually developed this repository to help give you the best experienc
 
 **24 August 2022:** Initial Commit.
 
+**30 August 2022:** Added keyboard functionality for fight sequences.
+
 
 ------
 
