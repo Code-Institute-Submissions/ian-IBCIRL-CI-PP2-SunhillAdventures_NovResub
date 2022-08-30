@@ -32,6 +32,20 @@ onkeydown="handleKeys(event);"
 onkeyup="handleKeys(event);">
     <!--set up the initial container with a greeting and some buttons  -->
     <div id="maindiv" class="container" onmouseleave="waitDontGo();">
+        
+        <div id="key-pressed">
+            <p>Pressed</p>
+        </div>
+        <div id="key-down">
+            <p>Down</p>
+        </div>
+        <div id="key-up">
+            <p>Up</p>
+        </div>
+
+        <h3>Current key pressed: <span id="current-key"></span></h3>
+        <h3>Last key pressed: <span id="last-key"></span></h3>
+     
         <header>
             <div id="headertext">
                 <h1>The Big Adventure! </h1>
@@ -45,9 +59,9 @@ onkeyup="handleKeys(event);">
             <main>
                 <nav>
                     <div id="option-buttons" class="btn-grid">
-                        <button class="btn" id="DpressedBtn">Option 1A</button>
-                        <button class="btn" id="ApressedBtn">Option 2</button>
-                        <button class="btn" id="SpressedBtn">Option 3</button>
+                        <button class="btn">Option 1A</button>
+                        <button class="btn">Option 2</button>
+                        <button class="btn">Option 3</button>
                         <button class="btn">Option 4</button>
                     </div>
                 </nav>

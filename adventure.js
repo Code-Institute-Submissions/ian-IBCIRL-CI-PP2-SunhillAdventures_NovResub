@@ -87,8 +87,8 @@ function showChosenTextItem(TextItemNumber) {
     //set the text for the element describing the scene
     textElement.innerText = textItem.text;
 
-    // set the background for the main div
-    urlLocation = textItem.Imgsrc
+    // set the background for the main div (or a default background)
+    urlLocation = textItem.Imgsrc || '/assets/images/herringbone.PNG'
     console.log("URL location is: ", urlLocation)
     urlLocation = "url('" + urlLocation + "')"
     console.log("URL location is: ", urlLocation)
@@ -113,8 +113,13 @@ function showChosenTextItem(TextItemNumber) {
             // set the text of the current action button
             button.innerHTML = option.text
 
-            // set the style for the new button
+            // set the class style for the new button
             button.classList.add('btn')
+
+            console.log("option identity is: ", option.identity) 
+            // set the id for the new button
+//            button.classList.add(option.identity)
+//            button.idList.add(option.identity)
 
             // set a function for clicking the button
             button.addEventListener('click', () => selectOption(option))
@@ -159,9 +164,15 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
-    let DpressedBtn = document.getElementById('DpressedBtn');
-    let ApressedBtn = document.getElementById('ApressedBtn');
-    let SpressedBtn = document.getElementById('SpressedBtn');
+  //  let DpressedBtn = document.getElementById('DpressedBtn');
+    //let ApressedBtn = document.getElementById('ApressedBtn');
+    //let SpressedBtn = document.getElementById('SpressedBtn');
+
+    let DpressedBtn = document.getElementById('key-down');
+    let ApressedBtn = document.getElementById('key-down');
+    let SpressedBtn = document.getElementById('key-down');
+
+
     let downDiv = document.getElementById('key-down');
     let upDiv = document.getElementById('key-up');
     let currentKeySpan = document.getElementById('current-key');
@@ -185,10 +196,10 @@ function handleKeys(event) {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
             currentKeySpan.innerHTML = '';
             downDiv.style.backgroundColor = 'white';
-            pressedDiv.style.backgroundColor = 'white';
+            ApressedBtn.style.backgroundColor = 'white';
             upDiv.style.backgroundColor = 'lightgreen';
 
-            // This just changes the upDiv back to white after 75ms
+            // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function() {
                 upDiv.style.backgroundColor = 'white';
                 // reset colour of down div and pressed div (might not need for fight sequences) if key down detected
@@ -595,6 +606,7 @@ const textItems = [{
                 op: 1,
                 text: "Swing right hook (D)",
                 nextText: 13,
+                identity: "DpressedBtn",
                 setState: {
                     gaoleralerted: true
                 },
@@ -603,10 +615,12 @@ const textItems = [{
                 op: 2,
                 text: "Swing left hook (A)",
                 nextText: 13,
+                identity: "ApressedBtn",
             },
             {
                 op: 3,
                 text: "Defend (S)",
+                identity: "SpressedBtn",
                 nextText: 13,
             },
             {
