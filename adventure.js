@@ -531,8 +531,8 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Do nothing",
-                nextText: 7,
+                text: "Step through door and prepare to attack !",
+                nextText: 13,
             },
             {
                 op: 3,
@@ -546,7 +546,8 @@ const textItems = [{
 
             },
         ]
-    }, {
+    },
+    {
         item: 12,
         text: "You can just about see out the window and can see the sun rising in the east.",
         option: [{
@@ -575,6 +576,34 @@ const textItems = [{
             },
         ]
     },
+    {
+        item: 13,
+        text: "You step through the door and are faced with a huge gaoler, intent on knocking you out again.",
+        option: [{
+                op: 1,
+                text: "Swing right hook (D)",
+                nextText: 13,
+                setState: {
+                    gaoleralerted: true
+                },
+            },
+            {
+                op: 2,
+                text: "Swing left hook (A)",
+                nextText: 13,
+            },
+            {
+                op: 3,
+                text: "Defend (S)",
+                nextText: 13,
+            },
+            {
+                op: 4,
+                text: "Collapse in a heap !",
+                nextText: generateRandom(1, 5),
+            },
+        ]
+    }, 
 ]
 
 
