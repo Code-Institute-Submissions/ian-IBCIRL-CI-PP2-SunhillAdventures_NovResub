@@ -111,7 +111,7 @@ function showChosenTextItem(TextItemNumber) {
             const button = document.createElement('button')
 
             // set the text of the current action button
-            button.innerText = option.text
+            button.innerHTML = option.text
 
             // set the style for the new button
             button.classList.add('btn')
@@ -159,20 +159,32 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
-    let pressedDiv = document.getElementById('key-pressed');
+    let DpressedBtn = document.getElementById('DpressedBtn');
+    let ApressedBtn = document.getElementById('ApressedBtn');
+    let SpressedBtn = document.getElementById('SpressedBtn');
     let downDiv = document.getElementById('key-down');
     let upDiv = document.getElementById('key-up');
     let currentKeySpan = document.getElementById('current-key');
     let lastKeySpan = document.getElementById('last-key');
+
+    // get the desired text for describing the scene
+    // array.find(function(currentValue, index, arr),thisValue)
+    let textItem = textItems.find(o => o.item === TextItemNumber)
+    // took a while to get this to work - o is a placeholder and => is a function pointer
+    // helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
 
     if (event.repeat) {
         return false;  // prevents holding the key from triggering the event again 
     } else {
         if (event.type === 'keydown') {
             // set colour of down div and pressed div (might not need for fight sequences) if key down detected
-            downDiv.style.backgroundColor = 'lightgreen';
-            pressedDiv.style.backgroundColor = 'lightgreen';
-            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            DpressedBtn.style.backgroundColor = 'lightgreen';
+            ApressedBtn.style.backgroundColor = 'lightorange';
+            SpressedBtn.style.backgroundColor = 'lightblue';
+
+            //use the text for the element describing the keypress
+            textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
             currentKeySpan.innerHTML = '';
@@ -183,6 +195,10 @@ function handleKeys(event) {
             // This just changes the upDiv back to white after 75ms
             setTimeout(function() {
                 upDiv.style.backgroundColor = 'white';
+                // reset colour of down div and pressed div (might not need for fight sequences) if key down detected
+                DpressedBtn.style.backgroundColor = 'white';
+                ApressedBtn.style.backgroundColor = 'white';
+                SpressedBtn.style.backgroundColor = 'white';
             }, 75);
 
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
