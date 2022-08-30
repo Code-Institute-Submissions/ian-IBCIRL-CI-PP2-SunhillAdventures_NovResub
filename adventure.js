@@ -167,11 +167,6 @@ function handleKeys(event) {
     let currentKeySpan = document.getElementById('current-key');
     let lastKeySpan = document.getElementById('last-key');
 
-    // get the desired text for describing the scene
-    // array.find(function(currentValue, index, arr),thisValue)
-    let textItem = textItems.find(o => o.item === TextItemNumber)
-    // took a while to get this to work - o is a placeholder and => is a function pointer
-    // helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
 
     if (event.repeat) {
         return false;  // prevents holding the key from triggering the event again 
@@ -182,8 +177,9 @@ function handleKeys(event) {
             ApressedBtn.style.backgroundColor = 'lightorange';
             SpressedBtn.style.backgroundColor = 'lightblue';
 
-            //use the text for the element describing the keypress
+            //use the text for the text element for describing the keypress
             textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            console.log(textElement.innerHTML);
             
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
