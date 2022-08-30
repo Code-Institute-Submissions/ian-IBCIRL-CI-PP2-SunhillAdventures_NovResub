@@ -153,6 +153,46 @@ function generateRandom(min = 0, max = 100) {
     return rand;
 }
 
+// Added some keypress handling functionality for fight sequences in game!
+// Note: We pass the event to the function to get info about it!
+// Reusing code institute sample code from keyboard event handling module of course - credits in README.MD .
+function handleKeys(event) {
+
+    // set element handles for various divs and displays to process and display keypress results.
+    let pressedDiv = document.getElementById('key-pressed');
+    let downDiv = document.getElementById('key-down');
+    let upDiv = document.getElementById('key-up');
+    let currentKeySpan = document.getElementById('current-key');
+    let lastKeySpan = document.getElementById('last-key');
+
+    if (event.repeat) {
+        return false;  // prevents holding the key from triggering the event again 
+    } else {
+        if (event.type === 'keydown') {
+            // set colour of down div and pressed div (might not need for fight sequences) if key down detected
+            downDiv.style.backgroundColor = 'lightgreen';
+            pressedDiv.style.backgroundColor = 'lightgreen';
+            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+        } else if (event.type === 'keyup') {
+            // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
+            currentKeySpan.innerHTML = '';
+            downDiv.style.backgroundColor = 'white';
+            pressedDiv.style.backgroundColor = 'white';
+            upDiv.style.backgroundColor = 'lightgreen';
+
+            // This just changes the upDiv back to white after 75ms
+            setTimeout(function() {
+                upDiv.style.backgroundColor = 'white';
+            }, 75);
+
+            lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+        }
+        
+    }
+}
+
+
+
 // set up the text for the game story line, 
 // describing what the player sees at various stages
 // and what their action choices or options are.
