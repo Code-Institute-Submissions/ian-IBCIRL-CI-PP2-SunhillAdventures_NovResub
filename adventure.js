@@ -134,7 +134,7 @@ function showChosenTextItem(TextItemNumber) {
     });
     //   }
 }
-
+ 
 function showOption(option) {
     console.log("Showing Option: ", option)
     // return true if there is no requiredState or the requiredState itself
@@ -191,6 +191,12 @@ function handleKeys(event) {
             //use the text for the text element for describing the keypress
             textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             console.log(textElement.innerHTML);
+
+            let keyinfo = document.getElementById('DpressedBtn');
+    
+            keyinfo.innerHTML = event.key
+            console.log(event.key)
+        
             
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
