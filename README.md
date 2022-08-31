@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **August 30th, 2022**
+The last update to this file was: **August 31st, 2022**
 
 ## Gitpod Reminders
 
