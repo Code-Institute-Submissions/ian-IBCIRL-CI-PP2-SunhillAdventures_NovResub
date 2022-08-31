@@ -116,9 +116,9 @@ function showChosenTextItem(TextItemNumber) {
             // set the class style for the new button
             button.classList.add('btn')
 
-            console.log("option identity is: ", option.identity) 
+            console.log("option identity is: ", option.identity)
             // set the id for the new button
-//            button.classList.add(option.identity)
+            //            button.classList.add(option.identity)
             button.id = option.identity
 
             // set a function for clicking the button
@@ -134,7 +134,7 @@ function showChosenTextItem(TextItemNumber) {
     });
     //   }
 }
- 
+
 function showOption(option) {
     console.log("Showing Option: ", option)
     // return true if there is no requiredState or the requiredState itself
@@ -164,7 +164,7 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
-  //  let DpressedBtn = document.getElementById('DpressedBtn');
+    //  let DpressedBtn = document.getElementById('DpressedBtn');
     //let ApressedBtn = document.getElementById('ApressedBtn');
     //let SpressedBtn = document.getElementById('SpressedBtn');
 
@@ -180,7 +180,7 @@ function handleKeys(event) {
 
 
     if (event.repeat) {
-        return false;  // prevents holding the key from triggering the event again 
+        return false; // prevents holding the key from triggering the event again 
     } else {
         if (event.type === 'keydown') {
             // set colour of down div and pressed div (might not need for fight sequences) if key down detected
@@ -192,12 +192,13 @@ function handleKeys(event) {
             textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             console.log(textElement.innerHTML);
 
+            // if we are in the fight scene then the button text can be set - skip if not
             let keyinfo = document.getElementById('DpressedBtn');
-    
-            keyinfo.innerHTML = event.key
-            console.log(event.key)
-        
-            
+            if (keyinfo) {
+                keyinfo.innerHTML = event.key
+                console.log(event.key)
+            }
+
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
             currentKeySpan.innerHTML = '';
@@ -206,7 +207,7 @@ function handleKeys(event) {
             upDiv.style.backgroundColor = 'lightgreen';
 
             // This just changes the upDiv and other buttons back to white after 75ms
-            setTimeout(function() {
+            setTimeout(function () {
                 upDiv.style.backgroundColor = 'white';
                 // reset colour of down div and pressed div (might not need for fight sequences) if key down detected
                 DpressedBtn.style.backgroundColor = 'white';
@@ -216,7 +217,7 @@ function handleKeys(event) {
 
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
         }
-        
+
     }
 }
 
@@ -636,7 +637,7 @@ const textItems = [{
                 identity: "NopressedBtn",
             },
         ]
-    }, 
+    },
 ]
 
 
