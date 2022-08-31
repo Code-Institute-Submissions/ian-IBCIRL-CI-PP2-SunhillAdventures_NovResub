@@ -119,7 +119,7 @@ function showChosenTextItem(TextItemNumber) {
             console.log("option identity is: ", option.identity) 
             // set the id for the new button
 //            button.classList.add(option.identity)
-//            button.idList.add(option.identity)
+            button.id = option.identity
 
             // set a function for clicking the button
             button.addEventListener('click', () => selectOption(option))
@@ -633,6 +633,7 @@ const textItems = [{
                 op: 4,
                 text: "Collapse in a heap !",
                 nextText: generateRandom(1, 5),
+                identity: "NopressedBtn",
             },
         ]
     }, 
