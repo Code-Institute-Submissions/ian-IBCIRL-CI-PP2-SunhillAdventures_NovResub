@@ -206,13 +206,13 @@ function handleKeys(event) {
             SpressedBtn.style.backgroundColor = 'lightblue';
 
             //use the text for the text element for describing the keypress
-            textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            console.log(textElement.innerHTML);
+            //textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            //console.log(textElement.innerHTML);
 
             // if we are in the fight scene then the button text can be set - skip if not
             let keyinfo = document.getElementById('DpressedBtn');
             if (keyinfo) {
-                keyinfo.innerHTML = event.key
+                keyinfo.innerText = event.key
                 console.log(event.key)
             }
 
@@ -232,6 +232,7 @@ function handleKeys(event) {
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
 
+            // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
         }
 
