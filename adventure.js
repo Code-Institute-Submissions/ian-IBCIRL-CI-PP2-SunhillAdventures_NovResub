@@ -96,8 +96,6 @@ function showChosenTextItem(TextItemNumber) {
     mainDiv.style.backgroundImage = urlLocation;
     // url('/assets/images/parquet1.PNG')
 
-    // mainDiv.style.backgroundImage = "url('/assets/images/herringbone.PNG')";
-
     const legtext = document.getElementById("legendtext")
     legtext.innerText = `scene #${textItem.item}`
 
@@ -126,14 +124,33 @@ function showChosenTextItem(TextItemNumber) {
 
             // consider adding images
             //button.style.backgroundImage = option.Imgsrc
-            // button.style.backgroundImage = "url('/assets/images/parquet1.PNG')";
+            button.style.backgroundImage = "url('./assets/images/greenandwhitemarble.PNG')";
 
+            button.style.backgroundColor = "orange";
+            
+            if (button.style.backgroundColor === "orange") {
+                button.style.backgroundColor = "green";
+            } else {
+                button.style.backgroundColor = "orange";
+            }
+        
             // add the button to the page
             optionButtonsElement.appendChild(button)
         }
     });
-    //   }
+
 }
+
+
+function btnClicked() {
+    if (this.style.backgroundColor === "orange") {
+        this.style.backgroundColor = "green";
+    } else {
+        this.style.backgroundColor = "orange";
+    }
+
+}
+
 
 function showOption(option) {
     console.log("Showing Option: ", option)
