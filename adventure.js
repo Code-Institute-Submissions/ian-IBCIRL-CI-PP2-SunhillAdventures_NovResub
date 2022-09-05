@@ -124,7 +124,7 @@ function showChosenTextItem(TextItemNumber) {
 
             // consider adding images
             //button.style.backgroundImage = option.Imgsrc
-            button.style.backgroundImage = "url('./assets/images/greenandwhitemarble.PNG')";
+            button.style.backgroundImage = "url('./assets/images/herringbone.PNG')";
 
             button.style.backgroundColor = "orange";
             
