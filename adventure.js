@@ -88,13 +88,13 @@ function showChosenTextItem(TextItemNumber) {
     textElement.innerText = textItem.text;
 
     // set the background for the main div (or a default background)
-    urlLocation = textItem.Imgsrc || '/assets/images/herringbone.PNG'
+    urlLocation = textItem.Imgsrc || './assets/images/herringbone.PNG'
     console.log("URL location is: ", urlLocation)
     urlLocation = "url('" + urlLocation + "')"
     console.log("URL location is: ", urlLocation)
 
     mainDiv.style.backgroundImage = urlLocation;
-    // url('/assets/images/parquet1.PNG')
+    // e.g. url('/assets/images/parquet1.PNG')
 
     const legtext = document.getElementById("legendtext")
     legtext.innerText = `scene #${textItem.item}`
@@ -379,11 +379,11 @@ const textItems = [{
     {
         item: 5,
         text: "You wake up on a cold pink granite floor, in a small, dimly lit room.",
-        Imgsrc: "/assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Look around",
-                Imgsrc: "/assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
@@ -411,11 +411,11 @@ const textItems = [{
     {
         item: 6,
         text: "You see a narrow, barred window, high up on the wall in front of you. You also notice a low hanging light overhead, and a light switch beside a door behind you.",
-        Imgsrc: "/assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.PNG",
         option: [{
                 op: 1,
                 text: "Stand up, avoiding the hanging light.",
-                Imgsrc: "/assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.PNG",
                 nextText: 8,
             },
             {

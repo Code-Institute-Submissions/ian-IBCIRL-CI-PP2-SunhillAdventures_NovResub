@@ -81,20 +81,22 @@ My goals have been to:
 
     - Social media icon images from https://github.com/techtycho/microsoft-homepage-clone/tree/master/img
     - JPG to avif from https://convertio.co/jpg-avif/ 
-    - Colors from 
+    - Colors from http://www.paletton.com/ 
 
 -   ### Colour Scheme
-    -  A palette will be chosen to convey a sense of adventure. An image of the palette is <details><summary>here.</summary>
-    <img src="https://">  
-</details>
+    -  A palette have been chosen to convey a sense of adventure. 
+    An image of the palette is <details><summary>here.</summary>
+    <img src="./assets/images/wireframe-homepage.PNG">  
+    </details>
+
 -   ### Typography
     -   Google Fonts are being used to import Oswald fonts into assests\css\style.css. 
 
 -   ### Wireframes
 
-<details><summary>Home</summary>
-<img src="assets/images/wireframes-homepage.png">
-</details>
+    - Home Page <details><summary>Wireframe 1</summary>
+    <img src="./assets/images/wireframe-homepage.PNG">
+    </details>
 
 ## Technologies Used
 * [Back to index](#index) 
