@@ -127,13 +127,13 @@ function showChosenTextItem(TextItemNumber) {
             button.style.backgroundImage = "url('./assets/images/herringbone.PNG')";
 
             button.style.backgroundColor = "orange";
-            
+
             if (button.style.backgroundColor === "orange") {
                 button.style.backgroundColor = "green";
             } else {
                 button.style.backgroundColor = "orange";
             }
-        
+
             // add the button to the page
             optionButtonsElement.appendChild(button)
         }
