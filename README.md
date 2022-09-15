@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **September 5th, 2022**
+The last update to this file was: **September 15th, 2022**
 
 ## Gitpod Reminders
 
@@ -75,6 +75,15 @@ My goals have been to:
 ## Design
 * [Back to index](#index) 
 * [Back to top of README.md](#about-my-project) 
+
+-   ### Process Flow
+    -   I have developed the game with a process flow as the basis for the game logic and supporting JavaScript.
+    -   I do also want to refine the keyboard handling and visualisation of player and gaoler health for the battle to escape.
+    -   A diagram of the process flow is <details><summary>here.</summary>
+    <img src="./assets/images/processflow.PNG">  
+    </details> 
+    
+
 
 -   ### Imagery
     -   I am working to find images to choose that will be eye-catching, informative and bright.  The colours in the images will be chosen to help convey a sense of adventure and excitement. The images will show Adventure participants to align with the main story line of the adventure. They will be chosen to ensure the site is clear and easy to use.
@@ -242,6 +251,8 @@ I have continually developed this repository to help give you the best experienc
 **30 August 2022:** Added keyboard functionality for fight sequences.
 
 **05 September 2022:** Fixed some relative file paths for background flooring.
+
+**15 September 2022:** updated documentation for process flow.
 
 
 ------
