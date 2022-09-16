@@ -181,13 +181,13 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
-    //  let DpressedBtn = document.getElementById('DpressedBtn');
-    //let ApressedBtn = document.getElementById('ApressedBtn');
-    //let SpressedBtn = document.getElementById('SpressedBtn');
 
     let DpressedBtn = document.getElementById('key-down');
     let ApressedBtn = document.getElementById('key-down');
     let SpressedBtn = document.getElementById('key-down');
+
+    let PlayerBarDiv = document.getElementById('player');
+    let GaolerBarDiv = document.getElementById('gaoler');
 
 
     let downDiv = document.getElementById('key-down');
@@ -204,6 +204,8 @@ function handleKeys(event) {
             DpressedBtn.style.backgroundColor = 'lightgreen';
             ApressedBtn.style.backgroundColor = 'lightorange';
             SpressedBtn.style.backgroundColor = 'lightblue';
+            PlayerBarDiv.style.backgroundColor = 'blue';
+            GaolerBarDiv.style.backgroundColor = 'orange';
 
             //use the text for the text element for describing the keypress
             //textElement.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
@@ -220,6 +222,8 @@ function handleKeys(event) {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
             currentKeySpan.innerHTML = '';
             downDiv.style.backgroundColor = 'white';
+            PlayerBarDiv.style.backgroundColor = 'red';
+            GaolerBarDiv.style.backgroundColor = 'green';
             ApressedBtn.style.backgroundColor = 'white';
             upDiv.style.backgroundColor = 'lightgreen';
 
@@ -230,10 +234,14 @@ function handleKeys(event) {
                 DpressedBtn.style.backgroundColor = 'white';
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
-            }, 75);
+                PlayerBarDiv.style.backgroundColor = 'white';
+                GaolerBarDiv.style.backgroundColor = 'white';
+                }, 75);
 
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            PlayerBarDiv.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
         }
 
     }

@@ -62,7 +62,19 @@ My goals have been to:
 
     -   #### A. First Time Visitor Goals
 
-            1. As a First Time Visitor, I want to understand the main purpose of the site and learn more about the organisation.
+            1. As a First Time Visitor, I want to begin playing the game.
+            2. As a First Time Visitor, I want to understand what i can see as a player
+            3. As a First Time Visitor, I want to know what my game options are.
+            4. As a First Time Visitor, I want to find an entertaining story.
+            5. As a First Time Visitor, I want to win the game.
+
+    -   #### B. Returning Visitor Goals
+
+            1. As a Returning Visitor, I want to begin playing the game because i enjoyed it before.
+            2. As a Returning Visitor, I want to see what else i can see as a player
+            3. As a Returning Visitor, I want to recall what my game options are.
+            4. As a Returning Visitor, I want to revist an entertaining story and try other options.
+            5. As a Returning Visitor, I want to win the game and improve my score.
 
 ## Features
 * [Back to index](#index) 
@@ -71,8 +83,11 @@ My goals have been to:
 
 ### Existing Features
 
--   __F01 Navigation Bar__
+-   __F01 Scene description__
 
+-   __F02 Player Action buttons/choices__
+
+-   __F02 Player Action results__
 
 
 ### Future Features 
@@ -81,6 +96,8 @@ My goals have been to:
 
 - __Timeline__
     - A 'Timeline' page could be added to provide more historical context for participants who would like to know more about the origins of the game, its characters and its reception in the community.
+- __Sprites__
+    - Sprites (graphical player and enemy representations) could be added to provide more visual context for participants who would like to experience more about the context of the game and its characters.
 
 ## Design
 * [Back to index](#index) 
@@ -92,9 +109,16 @@ My goals have been to:
     -   A diagram of the process flow is <details><summary>here.</summary>
     <img src="./assets/images/processflow.PNG">  
     </details> 
+
+-   ### Responsiveness
+    -   I have developed the game to be responsive on mobile devices and browsers.
+    -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
+    -   Screenshots of the responsiveness are <details><summary>here.</summary>
+    <img src="./assets/docs/responsivenesstestingscreen1.PNG">  
+    </details> and <details><summary>here.</summary>
+    <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
+    </details> 
     
-
-
 -   ### Imagery
     -   I am working to find images to choose that will be eye-catching, informative and bright.  The colours in the images will be chosen to help convey a sense of adventure and excitement. The images will show Adventure participants to align with the main story line of the adventure. They will be chosen to ensure the site is clear and easy to use.
 
@@ -133,7 +157,7 @@ My goals have been to:
 
 -   [Balsamiq:](https://balsamiq.com/) for wireframes during the design process.
 -   [Git:](https://git-scm.com/) was used for version control in the Gitpod environment to commit to Git, with comments, and Push to GitHub and publish to the public cloud.
--   [GitHub:](https://github.com/) is used as the respository for the source code, and GitPages for hosting.
+-   [GitHub:](https://github.com/) is used as the repository for the source code, and GitPages for hosting.
 - [ Chrome DevTools](https://developer.chrome.com/docs/devtools/) for checking and testing the site.
 -   [Google Fonts:](https://fonts.google.com/) for 'Lato' and 'Oswald' fonts.
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for visual cues.
@@ -146,6 +170,16 @@ My goals have been to:
 ## Testing 
 * [Back to index](#index) 
 * [Back to top of README.md](#about-my-project) 
+
+-   ### Responsiveness
+    -   I have developed the game to be responsive on mobile devices and browsers.
+    -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
+    -   Screenshots of the responsiveness are <details><summary>here.</summary>
+    <img src="./assets/docs/responsivenesstestingscreen1.PNG">  
+    </details> and <details><summary>here.</summary>
+    <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
+    </details> 
+
 
 ### Validator Testing
 ### WAVE (Web Accessibility Evaluation Tool)
