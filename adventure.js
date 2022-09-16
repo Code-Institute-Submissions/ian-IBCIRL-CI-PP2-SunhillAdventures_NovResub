@@ -41,6 +41,9 @@ function startGame() {
     // and their objects and location in the game etc.
     state = {};
 
+    state.playerhealth = 1000;
+    state.gaolerhealth = 1000;
+
     // put the first piece of text on the page 
     showChosenTextItem(generateRandom(1, 5));
 
@@ -116,14 +119,12 @@ function showChosenTextItem(TextItemNumber) {
 
             console.log("option identity is: ", option.identity)
             // set the id for the new button
-            //            button.classList.add(option.identity)
             button.id = option.identity
 
             // set a function for clicking the button
             button.addEventListener('click', () => selectOption(option))
 
             // consider adding images
-            //button.style.backgroundImage = option.Imgsrc
             button.style.backgroundImage = "url('./assets/images/herringbone.PNG')";
 
             button.style.backgroundColor = "orange";
@@ -223,9 +224,9 @@ function handleKeys(event) {
             currentKeySpan.innerHTML = '';
             downDiv.style.backgroundColor = 'white';
             PlayerBarDiv.style.backgroundColor = 'red';
-            GaolerBarDiv.style.backgroundColor = 'green';
+            GaolerBarDiv.style.backgroundColor = 'lightgreen';
             ApressedBtn.style.backgroundColor = 'white';
-            upDiv.style.backgroundColor = 'lightgreen';
+            upDiv.style.backgroundColor = 'green';
 
             // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function () {
@@ -234,14 +235,13 @@ function handleKeys(event) {
                 DpressedBtn.style.backgroundColor = 'white';
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
-                PlayerBarDiv.style.backgroundColor = 'white';
-                GaolerBarDiv.style.backgroundColor = 'white';
                 }, 75);
 
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            PlayerBarDiv.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth -= generateRandom(1,50)) + '</h3>';
+            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth -= generateRandom(1,60)) + '</h3>';
         }
 
     }
