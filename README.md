@@ -44,6 +44,14 @@ My goals have been to:
 10) utilising Javascript, HTML and CSS, with 
 11) Bootstrap's powerful, feature-packed frontend toolkit.
 
+12) I have decided to add a keyboard fight sequence at the end of the game
+13) so i will create the player and enemy (gaoler)
+14) I will move player and enemy with event listeners for arrow keys
+15) add attacking keys ASD
+16) add health bar
+17) game timers and game over
+
+
 ------
 
 ## User Experience (UX)
