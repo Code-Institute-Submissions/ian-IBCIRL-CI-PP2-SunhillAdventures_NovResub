@@ -232,8 +232,10 @@ function handleKeys(event) {
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth -= generateRandom(1, 50)) + '</h3>';
-            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth -= generateRandom(1, 60)) + '</h3>';
+            state.playerhealth -= generateRandom(1, 50);
+            state.gaolerhealth -= generateRandom(1, 60);
+            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth) + '</h3>';
+            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth) + '</h3>';
 
             // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function () {
