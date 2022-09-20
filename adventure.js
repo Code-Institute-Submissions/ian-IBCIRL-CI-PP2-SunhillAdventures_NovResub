@@ -224,7 +224,7 @@ function handleKeys(event) {
             currentKeySpan.innerHTML = '';
             downDiv.style.backgroundColor = 'white';
             PlayerBarDiv.style.backgroundColor = 'green';
-            GaolerBarDiv.style.backgroundColor = 'red';
+            GaolerBarDiv.style.backgroundColor = 'blue';
             ApressedBtn.style.backgroundColor = 'white';
             upDiv.style.backgroundColor = 'green';
 
