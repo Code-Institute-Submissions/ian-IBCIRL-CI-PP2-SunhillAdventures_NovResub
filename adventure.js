@@ -228,6 +228,13 @@ function handleKeys(event) {
             ApressedBtn.style.backgroundColor = 'white';
             upDiv.style.backgroundColor = 'green';
 
+
+            // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
+            lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth -= generateRandom(1, 50)) + '</h3>';
+            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth -= generateRandom(1, 60)) + '</h3>';
+
             // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function () {
                 upDiv.style.backgroundColor = 'white';
@@ -235,19 +242,12 @@ function handleKeys(event) {
                 DpressedBtn.style.backgroundColor = 'white';
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
-                }, 75);
-
-            // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
-            lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth -= generateRandom(1,50)) + '</h3>';
-            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth -= generateRandom(1,60)) + '</h3>';
+            }, 75);
 
             if (state.playerhealth <= 0) {
                 alert("You lost the fight!");
                 startGame();
-            } 
-            else if (state.gaolerhealth <= 0) {
+            } else if (state.gaolerhealth <= 0) {
                 alert("You won the fight!");
                 startGame();
             }
