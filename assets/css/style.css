@@ -24,6 +24,12 @@ body {
     height: 100vh;
 }
 
+#sp-logo {
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 1.8rem;
+ }
+ 
 
 /* style the overall container class */
 .container {
@@ -66,15 +72,14 @@ h1 {
     text-align: center;
 }
 
-
-/*
-h1 {
-    background: red;
-    color: #fff;
-    padding: 0 20px;
-    display:inline-block; /*optional 
-  }
-*/
+.player-grid {
+    background-color: red;
+    margin: 5%;
+    padding: 5%;
+    gap: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
 
 /* format and arrange the game buttons in a nice 2x2 grid */
 .btn-grid {
@@ -108,3 +113,59 @@ h1 {
 .btn:hover {
     border-color: black;
 }
+
+
+/* Screen sizes from 1200px wide or above */
+@media screen {
+    #menu {
+       clear: left;
+       float: left;
+       margin-left: .25rem;
+       margin-bottom: .75rem;
+       line-height: .50rem;
+       width: 100%;
+    }
+ }
+ 
+ /* Screen sizes from 1200px wide or below */
+ @media screen and (max-width: 1200px) {
+    #menu {
+       clear: left;
+       float: left;
+       margin-left: .75rem;
+       margin-bottom: .75rem;
+       line-height: .50rem;
+       width: 95%;
+    }
+ 
+ }
+ 
+ /* Screen sizes from 780px wide or below */
+ @media screen and (max-width: 780px) {
+    * {
+       margin: 0;
+       padding: 0;
+    }
+ 
+ }
+ 
+ /* Screen sizes from 470px wide or below */
+ @media screen and (max-width: 470px) {
+ 
+    * {
+       margin: 0;
+       padding: 0;
+    }
+ 
+ 
+ }
+ 
+ /* Screen sizes from 330px wide or below */
+ @media screen and (max-width: 330px) {
+    * {
+       margin: 0;
+       padding: 0;
+    }
+ 
+ 
+ }

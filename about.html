@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set up meta data for SOA accessibility and lighthouse scoring -->
+    <meta name="author" content="IBCIRL.com">
+    <meta name="description" content="Sunhill Adventures for text based Adventure, from Killorglin, Kerry, Ireland">
+    <meta name="keywords" content="learning, Adventure, Killorglin, Kerry, Ireland">
+
+    <!-- bring in Bootstrap 5.2.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- spare comment for copy paste as needed  -->
+    <!--My Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--My JavaScript file - defer is essential to run after loading -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!--set our page tab title-->
+    <title>Adventure</title>
+</head>
+
+<body>
+    <!--set up the initial container with a greeting and some buttons  -->
+    <div id="maindiv" class="container" onmouseleave="waitDontGo();">
+        <header>
+            <div id="headertext">
+                <a href="https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures">
+                    <h1>The Big Adventure! </h1>
+                </a>
+            </div>
+        </header>
+        <fieldset>
+            <legend id="legendtext">Sorry - that page does not exist</legend>
+            <div id="scenetext">
+                <h2>You have reached a page that does not exist</h2>
+            </div>
+            <main>
+                <nav>
+                    <div id="option-buttons" class="btn-grid">
+                        <button class="btn">Please try again</button>
+                        <button class="btn" onclick="restartGame();">Click here to try again</button>
+                        <button class="btn">Please try again</button>
+                        <button class="btn">Please try again</button>
+                    </div>
+                </nav>
+            </main>
+        </fieldset>
+
+        <footer>
+            <div id="headertext">(c) Adventures-R-Us</div>
+        </footer>
+    </div>
+</body>
+
+</html>
