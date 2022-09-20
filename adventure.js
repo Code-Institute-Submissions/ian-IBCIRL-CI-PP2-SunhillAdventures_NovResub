@@ -242,7 +242,7 @@ function handleKeys(event) {
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth -= generateRandom(1,50)) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth -= generateRandom(1,60)) + '</h3>';
-            if (state.playerhealth <= 0)( {
+            if (state.playerhealth <= 0) {
                 alert("You lost the fight!");
                 startGame();
             } 
