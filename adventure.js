@@ -222,12 +222,12 @@ function handleKeys(event) {
     if (state.playerhealth <= 0) {
         PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
         GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
-        postMessage("You lost the fight!");
+        alert("You lost the fight!");
        return startGame();
     } else if (state.gaolerhealth <= 0) {
         PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
         GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
-        postMessage("You won the fight!");
+        alert("You won the fight!");
         return startGame();
     }
 
