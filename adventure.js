@@ -219,17 +219,6 @@ function handleKeys(event) {
     let gwidth = state.gaolerhealth / 13 + 20;
     GaolerBarDiv.style.width = gwidth + '%' ;
     
-    if (state.playerhealth <= 0) {
-        PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
-        GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
-        alert("You lost the fight!");
-       return startGame();
-    } else if (state.gaolerhealth <= 0) {
-        PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
-        GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
-        alert("You won the fight!");
-        return startGame();
-    }
 
     if (event.repeat) {
         return false; // prevents holding the key from triggering the event again 
@@ -279,7 +268,19 @@ function handleKeys(event) {
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
-
+            
+            if (state.playerhealth <= 0) {
+                PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+                GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+                alert("You lost the fight!");
+               return startGame();
+            } else if (state.gaolerhealth <= 0) {
+                PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+                GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+                alert("You won the fight!");
+                return startGame();
+            }
+        
 
         }
 
