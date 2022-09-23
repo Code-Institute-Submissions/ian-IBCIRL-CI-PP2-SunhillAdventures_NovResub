@@ -267,7 +267,7 @@ function handleKeys(event) {
             lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             state.playerhealth -= generateRandom(1, 50);
-            state.gaolerhealth -= generateRandom(1, 60);
+            state.gaolerhealth -= generateRandom(1, 55);
             PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
 
