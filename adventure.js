@@ -33,7 +33,7 @@ function waitDontGo() {
 }
 
 // function to start the game.
-function startGame() {
+function startGame(inputx) {
 
     // start by initialising the game state to make sure it is empty.
     // for example, we may want to restart the game later.
@@ -41,9 +41,27 @@ function startGame() {
     // and their objects and location in the game etc.
     state = {};
 
+    if (inputx) {
+        alert("Restarting game via button" + inputx);
+        startGame();
+    }
+
     state.playerhealth = 1000;
     state.gaolerhealth = 1000;
 
+    let PlayerBarDiv = document.getElementById('player');
+    let GaolerBarDiv = document.getElementById('gaoler');
+    PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
+    
+    PlayerBarDiv.style.backgroundColor = 'green';
+    GaolerBarDiv.style.backgroundColor = 'blue';
+
+    let pwidth = state.playerhealth / 13 + 20;
+    PlayerBarDiv.style.width = pwidth + '%' ;
+    let gwidth = state.gaolerhealth / 13 + 20;
+    GaolerBarDiv.style.width = gwidth + '%' ;
+    
     // put the first piece of text on the page 
     showChosenTextItem(generateRandom(1, 5));
 
@@ -196,6 +214,22 @@ function handleKeys(event) {
     let currentKeySpan = document.getElementById('current-key');
     let lastKeySpan = document.getElementById('last-key');
 
+    let pwidth = state.playerhealth / 13 + 20;
+    PlayerBarDiv.style.width = pwidth + '%' ;
+    let gwidth = state.gaolerhealth / 13 + 20;
+    GaolerBarDiv.style.width = gwidth + '%' ;
+    
+    if (state.playerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+        postMessage("You lost the fight!");
+       return startGame();
+    } else if (state.gaolerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+        postMessage("You won the fight!");
+        return startGame();
+    }
 
     if (event.repeat) {
         return false; // prevents holding the key from triggering the event again 
@@ -234,8 +268,8 @@ function handleKeys(event) {
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             state.playerhealth -= generateRandom(1, 50);
             state.gaolerhealth -= generateRandom(1, 60);
-            PlayerBarDiv.innerHTML = '<h3>Player: ' + (state.playerhealth) + '</h3>';
-            GaolerBarDiv.innerHTML = '<h3>Gaoler: ' + (state.gaolerhealth) + '</h3>';
+            PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
+            GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
 
             // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function () {
@@ -246,13 +280,7 @@ function handleKeys(event) {
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
 
-            if (state.playerhealth <= 0) {
-                alert("You lost the fight!");
-                startGame();
-            } else if (state.gaolerhealth <= 0) {
-                alert("You won the fight!");
-                startGame();
-            }
+
         }
 
     }

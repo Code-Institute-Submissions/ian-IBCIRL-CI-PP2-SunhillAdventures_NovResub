@@ -114,6 +114,21 @@ h1 {
     border-color: black;
 }
 
+#menu{
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+    background-color: rgb(64, 47, 95);
+    position: absolute;
+    top: 5%;
+    margin: 5%;
+    width: auto;
+ 
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 85%;
+}
+
 
 /* Screen sizes from 1200px wide or above */
 @media screen {
