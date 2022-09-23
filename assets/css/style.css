@@ -37,6 +37,8 @@ body {
     color: wheat;
     width: 90%;
     max-width: 90%;
+    position: absolute;
+    
 }
 
 /* centre the header text with a decent margin */
