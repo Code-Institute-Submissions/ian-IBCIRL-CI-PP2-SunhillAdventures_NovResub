@@ -2,6 +2,10 @@
 let adventure = "Your adventure starts here !";
 console.log(adventure);
 
+
+// control whether to print alerts and console messages.
+debugcheck = 0;
+
 // state is initially an empty object.
 // This will keep track of our game player and objects etc.
 let state = {};
@@ -180,7 +184,7 @@ function processdefend() {
     PlayerBarDiv.style.backgroundColor = 'red';
     GaolerBarDiv.style.backgroundColor = 'red';
 
-    alert("defending");
+    if (debugcheck)  alert("defending");
 
     defend = generateRandom(1, 50);
 
@@ -235,7 +239,7 @@ function processrighthook() {
     PlayerBarDiv.style.backgroundColor = 'red';
     GaolerBarDiv.style.backgroundColor = 'red';
 
-    alert("right hook");
+    if (debugcheck) alert("right hook");
 
     // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
     state.playerhealth -= generateRandom(1, 55);
@@ -285,7 +289,7 @@ function processlefthook() {
     PlayerBarDiv.style.backgroundColor = 'red';
     GaolerBarDiv.style.backgroundColor = 'red';
 
-    alert("leftt hook");
+    if (debugcheck) alert("leftt hook");
 
     // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
     state.playerhealth -= generateRandom(1, 55);
