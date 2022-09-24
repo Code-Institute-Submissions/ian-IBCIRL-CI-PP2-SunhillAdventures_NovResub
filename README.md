@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **September 23rd, 2022**
+The last update to this file was: **September 24th, 2022**
 
 ## Gitpod Reminders
 
@@ -301,6 +301,9 @@ I have continually developed this repository to help give you the best experienc
 **20 September 2022:** reviewed media/screen layouts and player grid/keys.
 
 **23 September 2022:** added health display with width of player/gaoler. Improved added menu pages.
+
+**24 September 2022:** added fight state to distinguish need to handle keys and filter keys needed.
+
 ------
 
 ## FAQ 
