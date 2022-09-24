@@ -40,6 +40,7 @@ function startGame(inputx) {
     // the state is an object to hold the state of the player 
     // and their objects and location in the game etc.
     state = {};
+    state.fight = false;
 
     if (inputx) {
         alert("Restarting game via button" + inputx);
@@ -200,6 +201,11 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
+    
+    if (state.fight == false) {
+        alert("not in a fight YET !")
+        return;
+    }
 
     let DpressedBtn = document.getElementById('key-down');
     let ApressedBtn = document.getElementById('key-down');
@@ -633,6 +639,11 @@ const textItems = [{
                 op: 2,
                 text: "Step through door and prepare to attack !",
                 nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fight: true
+                },
+
             },
             {
                 op: 3,
