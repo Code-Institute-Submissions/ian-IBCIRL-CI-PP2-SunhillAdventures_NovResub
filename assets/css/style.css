@@ -118,6 +118,15 @@ h6 {
     grid-template-columns: repeat(2, auto);
 }
 
+.keyspressed-span{
+    background-color: orange;
+    margin: 2%;
+    padding: 2%;
+    gap: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
 /* style the main central buttons */
 .btnheadertext {
     color: darkolivegreen;

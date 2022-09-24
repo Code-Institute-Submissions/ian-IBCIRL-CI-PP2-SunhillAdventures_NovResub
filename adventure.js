@@ -233,7 +233,7 @@ function handleKeys(event) {
             // set colour of down div and pressed div (might not need for fight sequences) if key down detected
             DpressedBtn.style.backgroundColor = 'lightgreen';
             ApressedBtn.style.backgroundColor = 'lightorange';
-            SpressedBtn.style.backgroundColor = 'lightblue';
+            SpressedBtn.style.backgroundColor = 'orange';
             PlayerBarDiv.style.backgroundColor = 'red';
             GaolerBarDiv.style.backgroundColor = 'red';
 
@@ -274,7 +274,7 @@ function handleKeys(event) {
 
 
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
-            lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            // lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             state.playerhealth -= generateRandom(1, 50);
             state.gaolerhealth -= generateRandom(1, 55);

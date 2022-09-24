@@ -239,6 +239,8 @@ Good results all round.
         - helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
     3)  had fun trying to add visuals for buttons and scenes.
         - found helpful code here https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
+    4)  Having trouble getting final update for win/lose display update before
+        alert. Tried window.location.reload() before alert. Will keep trying.
 
 
 ## Deployment
