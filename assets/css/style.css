@@ -24,10 +24,6 @@ body {
     height: 100vh;
 }
 
-#sp-logo {
-    position: absolute;
- }
- 
 
 /* style the overall container class */
 .container {
