@@ -208,10 +208,23 @@ function handleKeys(event) {
         return;
     }
 
-    if (event.key == 'd') {
-        defend = generateRandom(1, 50);
-        document.getElementById('key-up').innerText = "Defending!"
-    } else defend = 0;
+    if (event.key == 'a' || event.key == 's' || event.key == 'd') {
+        if (event.key == 'd') {
+            defend = generateRandom(1, 50);
+            document.getElementById('key-up').innerText = "Defending!"
+        } else defend = 0;
+        if (event.key == 'a') {
+            document.getElementById('key-up').innerText = "Left Hook!"
+            defend = 0;
+        } 
+        if (event.key == 's') {
+            document.getElementById('key-up').innerText = "Right Hook!"
+            defend = 0;
+        }     
+    } else {
+        alert("invalid key - use A, S or D")
+        return;
+    }
 
     let DpressedBtn = document.getElementById('key-down');
     let ApressedBtn = document.getElementById('key-down');

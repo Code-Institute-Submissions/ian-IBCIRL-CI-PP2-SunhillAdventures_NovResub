@@ -80,13 +80,13 @@ h6 {
 
 #legendtext {
     color: wheat;
-    background: darkolivegreen;
+    background: rgb(107, 81, 47);
     width: auto;
-    padding: 2%;
+    padding: 1%;
 }
 
 #scenetext {
-    padding: 2%;
+    padding: 1%;
     color: wheat;
     background: darkolivegreen;
     text-align: center;
@@ -95,9 +95,9 @@ h6 {
 /* format and arrange the game buttons in a nice 2x2 grid */
 .btn-grid {
     background-color: red;
-    margin: 5%;
-    padding: 5%;
-    gap: 5%;
+    margin: 2%;
+    padding: 2%;
+    gap: 2%;
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
