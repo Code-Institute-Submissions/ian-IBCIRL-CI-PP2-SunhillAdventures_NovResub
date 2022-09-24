@@ -208,6 +208,11 @@ function handleKeys(event) {
         return;
     }
 
+    if (event.key == 'd') {
+        defend = generateRandom(1, 50);
+        document.getElementById('key-up').innerText = "Defending!"
+    } else defend = 0;
+
     let DpressedBtn = document.getElementById('key-down');
     let ApressedBtn = document.getElementById('key-down');
     let SpressedBtn = document.getElementById('key-down');
@@ -277,8 +282,21 @@ function handleKeys(event) {
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             // lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            state.playerhealth -= generateRandom(1, 50);
-            state.gaolerhealth -= generateRandom(1, 55);
+            
+            // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
+            state.playerhealth -= generateRandom(1, 55);
+            state.gaolerhealth -= generateRandom(1, 50);
+
+            //take into account any player defending
+            state.playerhealth += defend;
+
+            //take into account if the hammer is being used, if found
+            if (state.hammer) {
+                hammer = 100;
+            } else hammer = 0;
+
+            state.playerhealth += hammer;
+                        
             PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
 
@@ -693,11 +711,12 @@ const textItems = [{
         text: "You step through the door and are faced with a huge gaoler, intent on knocking you out again.",
         option: [{
                 op: 1,
-                text: "Swing right hook (D)",
+                text: "Swing right hook (S)",
                 nextText: 13,
                 identity: "DpressedBtn",
                 setState: {
-                    gaoleralerted: true
+                    gaoleralerted: true,
+                    rightswing: true
                 },
             },
             {
@@ -705,12 +724,21 @@ const textItems = [{
                 text: "Swing left hook (A)",
                 nextText: 13,
                 identity: "ApressedBtn",
+                setState: {
+                    gaoleralerted: true,
+                    lefthook: true
+                },
             },
             {
                 op: 3,
-                text: "Defend (S)",
+                text: "Defend (D)",
                 identity: "SpressedBtn",
                 nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fightdefend: true
+                },
+
             },
             {
                 op: 4,
