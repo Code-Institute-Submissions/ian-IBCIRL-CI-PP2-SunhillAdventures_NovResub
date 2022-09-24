@@ -25,10 +25,7 @@ body {
 }
 
 #sp-logo {
-    line-height: 6rem;
-    padding: 5%;
-    /*text-align: center;*/
-    margin-left: 1.8rem;
+    position: absolute;
  }
  
 

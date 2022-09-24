@@ -58,9 +58,9 @@ function startGame(inputx) {
     PlayerBarDiv.style.backgroundColor = 'green';
     GaolerBarDiv.style.backgroundColor = 'blue';
 
-    let pwidth = state.playerhealth / 13 + 20;
+    let pwidth = state.playerhealth / 16 + 40;
     PlayerBarDiv.style.width = pwidth + '%' ;
-    let gwidth = state.gaolerhealth / 13 + 20;
+    let gwidth = state.gaolerhealth / 16 + 40;
     GaolerBarDiv.style.width = gwidth + '%' ;
     
     // put the first piece of text on the page 
@@ -95,11 +95,12 @@ function selectOption(option) {
 
 //function to show particular text item
 function showChosenTextItem(TextItemNumber) {
+
     // get the desired text for describing the scene
-    // array.find(function(currentValue, index, arr),thisValue)
     let textItem = textItems.find(o => o.item === TextItemNumber)
     // took a while to get this to work - o is a placeholder and => is a function pointer
     // helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
+
     console.log("Text Item is: ", textItem)
 
     //log the text for the element describing the scene
