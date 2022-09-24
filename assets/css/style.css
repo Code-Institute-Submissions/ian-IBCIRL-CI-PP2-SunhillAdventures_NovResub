@@ -144,14 +144,12 @@ h6 {
 }
 
 #menu{
-
     padding: 2rem;
     background-color: rgb(32, 7, 80);
     position: relative;
     top: 5%;
+    line-height: 150%;
     margin: 5%;
-    width: 50%;
-    /*text-align: center;*/
     color: white;
     text-transform: uppercase;
     opacity: 85%;
@@ -165,7 +163,7 @@ h6 {
        float: left;
        margin-left: .25rem;
        margin-bottom: .75rem;
-       line-height: .50rem;
+       line-height: 150%;
        width: 100%;
     }
  }
@@ -177,7 +175,7 @@ h6 {
        float: left;
        margin-left: .75rem;
        margin-bottom: .75rem;
-       line-height: .50rem;
+       line-height: 150%;
        width: 95%;
     }
  
