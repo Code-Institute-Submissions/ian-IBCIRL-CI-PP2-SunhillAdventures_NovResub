@@ -295,7 +295,7 @@ function handleKeys(event) {
                 hammer = 100;
             } else hammer = 0;
 
-            state.playerhealth += hammer;
+            state.gaolerhealth -= hammer;
                         
             PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
