@@ -54,15 +54,15 @@ function startGame(inputx) {
     let GaolerBarDiv = document.getElementById('gaoler');
     PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
     GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
-    
+
     PlayerBarDiv.style.backgroundColor = 'green';
     GaolerBarDiv.style.backgroundColor = 'blue';
 
     let pwidth = state.playerhealth / 16 + 40;
-    PlayerBarDiv.style.width = pwidth + '%' ;
+    PlayerBarDiv.style.width = pwidth + '%';
     let gwidth = state.gaolerhealth / 16 + 40;
-    GaolerBarDiv.style.width = gwidth + '%' ;
-    
+    GaolerBarDiv.style.width = gwidth + '%';
+
     // put the first piece of text on the page 
     showChosenTextItem(generateRandom(1, 5));
 
@@ -144,6 +144,16 @@ function showChosenTextItem(TextItemNumber) {
             // set a function for clicking the button
             button.addEventListener('click', () => selectOption(option))
 
+            // handle fight buttons
+            if (option.identity === "DpressedBtn") {
+                button.addEventListener('click', () => processdefend())
+            } else if (option.identity === "SpressedBtn") {
+                button.addEventListener('click', () => processrighthook())
+            } else if (option.identity === "ApressedBtn") {
+                button.addEventListener('click', () => processlefthook())
+            }
+
+
             // consider adding images
             button.style.backgroundImage = "url('./assets/images/herringbone.PNG')";
 
@@ -162,6 +172,156 @@ function showChosenTextItem(TextItemNumber) {
 
 }
 
+function processdefend() {
+
+    let PlayerBarDiv = document.getElementById('player');
+    let GaolerBarDiv = document.getElementById('gaoler');
+
+    PlayerBarDiv.style.backgroundColor = 'red';
+    GaolerBarDiv.style.backgroundColor = 'red';
+
+    alert("defending");
+
+    defend = generateRandom(1, 50);
+
+    // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
+    state.playerhealth -= generateRandom(1, 55);
+    state.gaolerhealth -= generateRandom(1, 50);
+
+    //take into account any player defending
+    state.playerhealth += defend;
+
+    //take into account if the hammer is being used, if found
+    if (state.hammer) {
+        hammer = 100;
+    } else hammer = 0;
+
+    state.gaolerhealth -= hammer;
+
+    PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
+
+    let pwidth = state.playerhealth / 13 + 20;
+    PlayerBarDiv.style.width = pwidth + '%';
+    let gwidth = state.gaolerhealth / 13 + 20;
+    GaolerBarDiv.style.width = gwidth + '%';
+
+    setTimeout(function () {
+        // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
+        PlayerBarDiv.style.backgroundColor = 'green';
+        GaolerBarDiv.style.backgroundColor = 'blue';
+    }, 75);
+
+    if (state.playerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+        window.location.reload();
+        alert("You lost the fight!");
+        return startGame();
+    } else if (state.gaolerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+        window.location.reload();
+        alert("You won the fight!");
+        return startGame();
+    }
+}
+
+function processrighthook() {
+
+    let PlayerBarDiv = document.getElementById('player');
+    let GaolerBarDiv = document.getElementById('gaoler');
+
+    PlayerBarDiv.style.backgroundColor = 'red';
+    GaolerBarDiv.style.backgroundColor = 'red';
+
+    alert("right hook");
+
+    // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
+    state.playerhealth -= generateRandom(1, 55);
+    state.gaolerhealth -= generateRandom(1, 50);
+
+    //take into account if the hammer is being used, if found
+    if (state.hammer) {
+        hammer = 100;
+    } else hammer = 0;
+
+    state.gaolerhealth -= hammer;
+
+    PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
+
+    let pwidth = state.playerhealth / 13 + 20;
+    PlayerBarDiv.style.width = pwidth + '%';
+    let gwidth = state.gaolerhealth / 13 + 20;
+    GaolerBarDiv.style.width = gwidth + '%';
+
+    setTimeout(function () {
+        // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
+        PlayerBarDiv.style.backgroundColor = 'green';
+        GaolerBarDiv.style.backgroundColor = 'blue';
+    }, 75);
+
+    if (state.playerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+        window.location.reload();
+        alert("You lost the fight!");
+        return startGame();
+    } else if (state.gaolerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+        window.location.reload();
+        alert("You won the fight!");
+        return startGame();
+    }
+}
+
+function processlefthook() {
+
+    let PlayerBarDiv = document.getElementById('player');
+    let GaolerBarDiv = document.getElementById('gaoler');
+
+    PlayerBarDiv.style.backgroundColor = 'red';
+    GaolerBarDiv.style.backgroundColor = 'red';
+
+    alert("leftt hook");
+
+    // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
+    state.playerhealth -= generateRandom(1, 55);
+    state.gaolerhealth -= generateRandom(1, 50);
+
+    // no hammer in left hand...
+
+    PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
+
+    let pwidth = state.playerhealth / 13 + 20;
+    PlayerBarDiv.style.width = pwidth + '%';
+    let gwidth = state.gaolerhealth / 13 + 20;
+    GaolerBarDiv.style.width = gwidth + '%';
+
+    setTimeout(function () {
+        // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
+        PlayerBarDiv.style.backgroundColor = 'green';
+        GaolerBarDiv.style.backgroundColor = 'blue';
+    }, 75);
+
+    if (state.playerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+        window.location.reload();
+        alert("You lost the fight!");
+        return startGame();
+    } else if (state.gaolerhealth <= 0) {
+        PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+        GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+        window.location.reload();
+        alert("You won the fight!");
+        return startGame();
+    }
+
+}
 
 function btnClicked() {
     if (this.style.backgroundColor === "orange") {
@@ -202,7 +362,7 @@ function generateRandom(min = 0, max = 100) {
 function handleKeys(event) {
 
     // set element handles for various divs and displays to process and display keypress results.
-    
+
     if (state.fight == false) {
         alert("not in a fight YET !")
         return;
@@ -216,11 +376,11 @@ function handleKeys(event) {
         if (event.key == 'a') {
             document.getElementById('key-up').innerText = "Left Hook!"
             defend = 0;
-        } 
+        }
         if (event.key == 's') {
             document.getElementById('key-up').innerText = "Right Hook!"
             defend = 0;
-        }     
+        }
     } else {
         alert("invalid key - use A, S or D")
         return;
@@ -240,10 +400,10 @@ function handleKeys(event) {
     let lastKeySpan = document.getElementById('last-key');
 
     let pwidth = state.playerhealth / 13 + 20;
-    PlayerBarDiv.style.width = pwidth + '%' ;
+    PlayerBarDiv.style.width = pwidth + '%';
     let gwidth = state.gaolerhealth / 13 + 20;
-    GaolerBarDiv.style.width = gwidth + '%' ;
-    
+    GaolerBarDiv.style.width = gwidth + '%';
+
 
     if (event.repeat) {
         return false; // prevents holding the key from triggering the event again 
@@ -266,13 +426,13 @@ function handleKeys(event) {
                 keyinfo.innerText = event.key
                 console.log(event.key)
             }
-            
+
             if (state.playerhealth <= 0) {
                 PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
                 GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
                 window.location.reload();
                 alert("You lost the fight!");
-               return startGame();
+                return startGame();
             } else if (state.gaolerhealth <= 0) {
                 PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
                 GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
@@ -295,7 +455,7 @@ function handleKeys(event) {
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             // lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
             currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            
+
             // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
             state.playerhealth -= generateRandom(1, 55);
             state.gaolerhealth -= generateRandom(1, 50);
@@ -309,7 +469,7 @@ function handleKeys(event) {
             } else hammer = 0;
 
             state.gaolerhealth -= hammer;
-                        
+
             PlayerBarDiv.innerHTML = '<h3>Player Health: ' + (state.playerhealth) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Gaoler Health: ' + (state.gaolerhealth) + '</h3>';
 
@@ -321,8 +481,8 @@ function handleKeys(event) {
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
-            
-        
+
+
 
         }
 
@@ -726,7 +886,7 @@ const textItems = [{
                 op: 1,
                 text: "Swing right hook (S)",
                 nextText: 13,
-                identity: "DpressedBtn",
+                identity: "SpressedBtn",
                 setState: {
                     gaoleralerted: true,
                     rightswing: true
@@ -745,7 +905,7 @@ const textItems = [{
             {
                 op: 3,
                 text: "Defend (D)",
-                identity: "SpressedBtn",
+                identity: "DpressedBtn",
                 nextText: 13,
                 setState: {
                     gaoleralerted: true,
