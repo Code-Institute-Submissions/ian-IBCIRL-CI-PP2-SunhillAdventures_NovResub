@@ -191,7 +191,7 @@ My goals have been to:
 ### WAVE (Web Accessibility Evaluation Tool)
 Good results. No errors. Managed to eliminate all alerts and contrast errors.
 <details><summary>WAVE Results</summary>
-<img src="./assets/images/wave results.JPG">
+<img src="./assets/docs/wave.PNG">
 </details>
 
 [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
@@ -203,7 +203,7 @@ Good results all round.
 [Google Chrome Lighthouse Validator results.](https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/user-flows.md) 
 
 <details><summary>Index HTML Results</summary>
-<img src="./assets/images/html-validation-result-1.PNG">
+<img src="./assets/docs/wave.PNG">
 </details>
 
 ### Browser Compatibility
