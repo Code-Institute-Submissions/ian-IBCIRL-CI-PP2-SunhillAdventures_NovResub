@@ -375,14 +375,14 @@ function handleKeys(event) {
     if (event.key == 'a' || event.key == 's' || event.key == 'd') {
         if (event.key == 'd') {
             defend = generateRandom(1, 50);
-            document.getElementById('key-up').innerText = "Defending!"
+            document.getElementById('last-key').innerText = "Defending!"
         } else defend = 0;
         if (event.key == 'a') {
-            document.getElementById('key-up').innerText = "Left Hook!"
+            document.getElementById('last-key').innerText = "Left Hook!"
             defend = 0;
         }
         if (event.key == 's') {
-            document.getElementById('key-up').innerText = "Right Hook!"
+            document.getElementById('last-key').innerText = "Right Hook!"
             defend = 0;
         }
     } else {
@@ -402,6 +402,7 @@ function handleKeys(event) {
     let upDiv = document.getElementById('key-up');
     let currentKeySpan = document.getElementById('current-key');
     let lastKeySpan = document.getElementById('last-key');
+    console.log(lastKeySpan);
 
     let pwidth = state.playerhealth / 13 + 20;
     PlayerBarDiv.style.width = pwidth + '%';
