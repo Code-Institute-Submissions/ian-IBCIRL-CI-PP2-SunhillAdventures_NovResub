@@ -373,15 +373,15 @@ function handleKeys(event) {
     }
 
     if (event.key == 'a' || event.key == 's' || event.key == 'd') {
-        if (event.key == 'd') {
+        if (event.key == 'd' || event.key == 'D' ) {
             defend = generateRandom(1, 50);
             document.getElementById('last-key').innerText = "Defending!"
         } else defend = 0;
-        if (event.key == 'a') {
+        if (event.key == 'a' || event.key == 'A' ) {
             document.getElementById('last-key').innerText = "Left Hook!"
             defend = 0;
         }
-        if (event.key == 's') {
+        if (event.key == 's' || event.key == 'S' ) {
             document.getElementById('last-key').innerText = "Right Hook!"
             defend = 0;
         }
@@ -432,20 +432,6 @@ function handleKeys(event) {
                 console.log(event.key)
             }
 
-            if (state.playerhealth <= 0) {
-                PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
-                GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
-                window.location.reload();
-                alert("You lost the fight!\n\nTry defending (D) more next time !");
-                return startGame();
-            } else if (state.gaolerhealth <= 0) {
-                PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
-                GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
-                window.location.reload();
-                alert("You won the fight!");
-                return startGame();
-            }
-
 
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
@@ -486,6 +472,20 @@ function handleKeys(event) {
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
+
+            if (state.playerhealth <= 0) {
+                PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
+                GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
+                window.location.reload();
+                alert("You lost the fight!\n\nTry defending (D) more next time !");
+                return startGame();
+            } else if (state.gaolerhealth <= 0) {
+                PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
+                GaolerBarDiv.innerHTML = '<h3>Gaoler Lost !' + '</h3>';
+                window.location.reload();
+                alert("You won the fight!");
+                return startGame();
+            }
 
 
 
