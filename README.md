@@ -112,7 +112,8 @@ My goals have been to:
 -   ### Process Flow
     -   I have developed the game with a process flow as the basis for the game logic and supporting JavaScript.
     -   I do also want to refine the keyboard handling and visualisation of player and gaoler health for the battle to escape.
-    -   A diagram of the process flow is <details><summary>here.</summary>
+    
+    A diagram of the process flow is <details><summary>here.</summary>
     <img src="./assets/images/processflow.PNG">  
     </details> 
 
