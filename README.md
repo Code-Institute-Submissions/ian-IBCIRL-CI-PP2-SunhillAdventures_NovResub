@@ -135,7 +135,7 @@ My goals have been to:
 -   ### Colour Scheme
     -  A palette have been chosen to convey a sense of adventure. 
     An image of the palette is <details><summary>here.</summary>
-    <img src="./assets/assets/docs/NZ+Color+Palettes-01.jpg"> 
+    <img src="./docs/NZ+Color+Palettes-01.jpg"> 
     </details>
 
 -   ### Typography
