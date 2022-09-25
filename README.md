@@ -193,7 +193,8 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 <details><summary>WAVE Results</summary>
 <img src="./assets/images/wave results.JPG">
 </details>
--   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
+
+[WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
 
 [HTML Validator](https://validator.w3.org/)
