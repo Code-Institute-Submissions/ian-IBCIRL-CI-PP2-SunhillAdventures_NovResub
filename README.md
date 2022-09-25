@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **September 24th, 2022**
+The last update to this file was: **September 25th, 2022**
 
 ## Gitpod Reminders
 
@@ -46,12 +46,11 @@ My goals have been to:
 
 ### Project Additional Goals
 
-12) I have decided to add a keyboard fight sequence at the end of the game
-13) so i will create the player (adding the option to name the player) and enemy (gaoler)
-14) I will move player and enemy with event listeners for arrow keys
-15) add attacking keys ASD
-16) add health bar
-17) game timers and game over
+12) I have decided to add a keyboard fight sequence at the end of the game (with buttons for mobile/touch)
+13) so i will create the player (possibly adding the option to name the player) and enemy (gaoler)
+14) add attacking keys ASD with event listeners and button onclick handlers
+15) add health bar
+16) game completion notification (win/lose)
 
 
 ------
@@ -84,10 +83,13 @@ My goals have been to:
 ### Existing Features
 
 -   __F01 Scene description__
+    - The bottom half of the screen shows the what the player sees and their options.
 
 -   __F02 Player Action buttons/choices__
+    - the lower portion of the screen shows buttons that can be clicked to make choices that advance the game.
 
 -   __F02 Player Action results__
+    - the subsequent screens and alerts tell the player the result of their actions, and any incorrect actions.
 
 
 ### Future Features 
@@ -96,8 +98,9 @@ My goals have been to:
 
 - __Timeline__
     - A 'Timeline' page could be added to provide more historical context for participants who would like to know more about the origins of the game, its characters and its reception in the community.
+
 - __Sprites__
-    - Sprites (graphical player and enemy representations) could be added to provide more visual context for participants who would like to experience more about the context of the game and its characters.
+    - Sprites (graphical player and enemy representations, beyond the health bars shown) could be added to provide more visual context for participants who would like to experience more about the context of the game and its characters.
 
 ## Design
 * [Back to index](#index) 
@@ -114,26 +117,25 @@ My goals have been to:
     -   I have developed the game to be responsive on mobile devices and browsers.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
     -   Screenshots of the responsiveness are <details><summary>here.</summary>
-    <img src="./assets/docs/responsivenesstestingscreen1.PNG">  
-    </details> and <details><summary>here.</summary>
+    <img src="./assets/docs/responsive.PNG">  
+    </details> and and earlier version <details><summary>here.</summary>
     <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
     </details> 
     
 -   ### Imagery
     -   I am working to find images to choose that will be eye-catching, informative and bright.  The colours in the images will be chosen to help convey a sense of adventure and excitement. The images will show Adventure participants to align with the main story line of the adventure. They will be chosen to ensure the site is clear and easy to use.
 
-    - Social media icon images from https://github.com/techtycho/microsoft-homepage-clone/tree/master/img
     - JPG to avif from https://convertio.co/jpg-avif/ 
     - Colors from http://www.paletton.com/ 
 
 -   ### Colour Scheme
     -  A palette have been chosen to convey a sense of adventure. 
     An image of the palette is <details><summary>here.</summary>
-    <img src="./assets/images/wireframe-homepage.PNG">  
+    <img src="./assets/assets/docs/NZ+Color+Palettes-01.jpg)
     </details>
 
 -   ### Typography
-    -   Google Fonts are being used to import Oswald fonts into assests\css\style.css. 
+    -   Google Fonts are imported for potential use from Oswald fonts into assests\css\style.css. 
 
 -   ### Wireframes
 
@@ -164,7 +166,7 @@ My goals have been to:
 -   [Convertio JPG to avif:](https://convertio.co/jpg-avif/) to convert PNG and JPG to avif images.
 -   [TinyPNG](https://tinypng.com/) to reduce the size of PNG images and improve Lighthouse score.
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
--   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-Adventure/)
+-   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 -   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
 
 ## Testing 
@@ -175,8 +177,8 @@ My goals have been to:
     -   I have developed the game to be responsive on mobile devices and browsers.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
     -   Screenshots of the responsiveness are <details><summary>here.</summary>
-    <img src="./assets/docs/responsivenesstestingscreen1.PNG">  
-    </details> and <details><summary>here.</summary>
+    <img src="./assets/docs/responsive.PNG">  
+    </details> and an earlier version <details><summary>here.</summary>
     <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
     </details> 
 
@@ -216,13 +218,35 @@ Good results all round.
 
 ### Test Cases and Results
 
-1. As a First Time Visitor, I want to understand the main purpose of the site and learn more about the organisation.
+1. As a First Time Visitor, I want to understand the main purpose of the site and learn more about the game.
 
 | **Feature**                     | **Action**                          | **Expected Result**                                                                     | **Actual Result** |
 |---------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------|-------------------|
 | Hero Section & call to action| First section displayed on the page | visitor can see immediately and read what type of adventure they can expect from site | PASS              |
-| Adventures                         | Check the list of adventures           | Find what type of adventures are on offer                                         | PASS              |
-| Adventures                         | Click on the Adventures menu item      | visitor is able to see some examples of the other Adventures                                     | PASS              |
+| Adventures                         | Check the options for adventure           | Find what choices for adventure are available                                         | PASS              |
+
+
+1. As a First Time Visitor, I want to begin playing the game.
+Result = PASS
+2. As a First Time Visitor, I want to understand what i can see as a player
+Result = PASS
+3. As a First Time Visitor, I want to know what my game options are.
+Result = PASS
+4. As a First Time Visitor, I want to find an entertaining story.
+Result = PASS
+5. As a First Time Visitor, I want to win the game.
+Result = PASS
+
+1. As a Returning Visitor, I want to begin playing the game because i enjoyed it before.
+Result = PASS
+2. As a Returning Visitor, I want to see what else i can see as a player
+Result = PASS
+3. As a Returning Visitor, I want to recall what my game options are.
+Result = PASS
+4. As a Returning Visitor, I want to revist an entertaining story and try other options.
+Result = PASS
+5. As a Returning Visitor, I want to win the game and improve my score.
+Result = PASS
 
 
 
@@ -276,13 +300,11 @@ On the command line, type "git clone" then paste in the copied url and press the
     - found a decent random range generator https://www.educative.io/answers/how-to-generate-a-random-number-between-a-range-in-javascript 
 
 -   ### Images
-    - Social media icon images from https://github.com/techtycho/microsoft-homepage-clone/tree/master/img
+
     - Adventure images https://www.pexels.com/ 
     - favicon.ico generation https://favicon.io/favicon-generator/
-    - Colors from [Lilybug Design](https://images)
+    - Colors from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall)
 
--   ### About 
-    - Adventure images https://www.pexels.com/ 
 
 ------
 
@@ -305,6 +327,8 @@ I have continually developed this repository to help give you the best experienc
 **23 September 2022:** added health display with width of player/gaoler. Improved added menu pages.
 
 **24 September 2022:** added fight state to distinguish need to handle keys and filter keys needed.
+
+**25 September 2022:** significantly updated readme.
 
 ------
 
