@@ -82,14 +82,17 @@ My goals have been to:
 
 ### Existing Features
 
--   __F01 Scene description__
+-   __F01 Title and menu__
+    - The top of the screen shows the name of the game with menu options to restart and find out about the game.
+
+-   __F02 Scene description__
     - The bottom half of the screen shows the what the player sees and their options.
 
--   __F02 Player Action buttons/choices__
-    - the lower portion of the screen shows buttons that can be clicked to make choices that advance the game.
+-   __F03 Player Action buttons/choices__
+    - The lower portion of the screen shows buttons that can be clicked to make choices that advance the game.
 
--   __F02 Player Action results__
-    - the subsequent screens and alerts tell the player the result of their actions, and any incorrect actions.
+-   __F04 Player Action results__
+    - The subsequent screens and alerts tell the player the result of their actions, and any incorrect actions.
 
 
 ### Future Features 
@@ -118,7 +121,8 @@ My goals have been to:
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
     -   Screenshots of the responsiveness are <details><summary>here.</summary>
     <img src="./assets/docs/responsive.PNG">  
-    </details> and and earlier version <details><summary>here.</summary>
+    </details>
+    and and earlier version <details><summary>here.</summary>
     <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
     </details> 
     
@@ -131,7 +135,7 @@ My goals have been to:
 -   ### Colour Scheme
     -  A palette have been chosen to convey a sense of adventure. 
     An image of the palette is <details><summary>here.</summary>
-    <img src="./assets/assets/docs/NZ+Color+Palettes-01.jpg)
+    <img src="./assets/assets/docs/NZ+Color+Palettes-01.jpg"> 
     </details>
 
 -   ### Typography
