@@ -119,7 +119,8 @@ My goals have been to:
 -   ### Responsiveness
     -   I have developed the game to be responsive on mobile devices and browsers.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
-    -   Screenshots of the responsiveness are <details><summary>here.</summary>
+
+    Screenshots of the responsiveness are <details><summary>here.</summary>
     <img src="./assets/docs/responsive.PNG">  
     </details>
     and and earlier version <details><summary>here.</summary>
@@ -143,7 +144,7 @@ My goals have been to:
 
 -   ### Wireframes
 
-    - Home Page <details><summary>Wireframe 1</summary>
+    Home Page <details><summary>Wireframe 1</summary>
     <img src="./assets/images/wireframe-homepage.PNG">
     </details>
 
@@ -180,7 +181,8 @@ My goals have been to:
 -   ### Responsiveness
     -   I have developed the game to be responsive on mobile devices and browsers.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
-    -   Screenshots of the responsiveness are <details><summary>here.</summary>
+
+    Screenshots of the responsiveness are <details><summary>here.</summary>
     <img src="./assets/docs/responsive.PNG">  
     </details> and an earlier version <details><summary>here.</summary>
     <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
@@ -340,9 +342,10 @@ I have continually developed this repository to help give you the best experienc
 * [Back to index](#index) 
 * [Back to top of README.md](#about-my-project) 
 
-**Why have you added this ?**
+**Why have you developed this ?**
 
-It will ...
+I like gaming and a good interactive story
+
 ---
 
 Happy coding!
