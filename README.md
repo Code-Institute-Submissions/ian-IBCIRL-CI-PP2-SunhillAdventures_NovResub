@@ -73,7 +73,7 @@ My goals have been to:
             2. As a Returning Visitor, I want to see what else i can see as a player
             3. As a Returning Visitor, I want to recall what my game options are.
             4. As a Returning Visitor, I want to revist an entertaining story and try other options.
-            5. As a Returning Visitor, I want to win the game and improve my score.
+            5. As a Returning Visitor, I want to win the game and improve my result.
 
 ## Features
 * [Back to index](#index) 
