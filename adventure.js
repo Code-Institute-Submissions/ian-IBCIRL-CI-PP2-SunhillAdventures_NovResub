@@ -184,7 +184,7 @@ function processdefend() {
     PlayerBarDiv.style.backgroundColor = 'red';
     GaolerBarDiv.style.backgroundColor = 'red';
 
-    if (debugcheck)  alert("defending");
+    if (debugcheck) alert("defending");
 
     defend = generateRandom(1, 50);
 

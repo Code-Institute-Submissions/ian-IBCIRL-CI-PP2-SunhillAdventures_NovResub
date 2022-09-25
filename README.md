@@ -196,7 +196,6 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 
 [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
-
 [HTML Validator](https://validator.w3.org/)
 Good results all round.
 
@@ -301,7 +300,7 @@ On the command line, type "git clone" then paste in the copied url and press the
     - Code Institute tutors, mentors and colleagues in Slack channels.
     - Github pages - https://github.com/
     - Bootstrap documentation https://getbootstrap.com/docs/4.6/getting-started/introduction/ 
-    - I decided to start using bootstrap for this project
+    - I decided to start using bootstrap for this project but didn't use it much (yet)
     - found a decent random range generator https://www.educative.io/answers/how-to-generate-a-random-number-between-a-range-in-javascript 
 
 -   ### Images
