@@ -199,12 +199,18 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 
 [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
-<details><summary>Index HTML Results</summary>
-<img src="./assets/docs/wave.PNG">
-</details>
 
 [HTML Validator](https://validator.w3.org/)
 Good results all round.
+
+<details><summary>Index HTML Results</summary>
+<img src="./assets/docs/htmlvalidation.PNG">
+</details>
+
+<details><summary>Index CSS Results</summary>
+<img src="./assets/docs/cssvalidation.PNG">
+</details>
+
 
 [Google Chrome Lighthouse Validator results.](https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/user-flows.md) 
 
