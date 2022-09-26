@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **September 25th, 2022**
+The last update to this file was: **September 26th, 2022**
 
 ## Gitpod Reminders
 
@@ -322,7 +322,7 @@ On the command line, type "git clone" then paste in the copied url and press the
     - favicon.ico generation https://favicon.io/favicon-generator/
     - Colors from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall)
 
-
+ 
 ------
 
 ## Release History
@@ -345,7 +345,7 @@ I have continually developed this repository to help give you the best experienc
 
 **24 September 2022:** added fight state to distinguish need to handle keys and filter keys needed.
 
-**25 September 2022:** significantly updated readme.
+**26 September 2022:** significantly updated readme and corrected validator reccomendations.
 
 ------
 

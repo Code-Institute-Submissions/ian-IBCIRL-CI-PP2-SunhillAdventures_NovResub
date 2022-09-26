@@ -477,7 +477,7 @@ function handleKeys(event) {
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
-
+ 
             if (state.playerhealth <= 0) {
                 PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
                 GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
