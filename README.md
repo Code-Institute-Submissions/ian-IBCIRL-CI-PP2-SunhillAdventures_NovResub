@@ -105,6 +105,9 @@ My goals have been to:
 - __Sprites__
     - Sprites (graphical player and enemy representations, beyond the health bars shown) could be added to provide more visual context for participants who would like to experience more about the context of the game and its characters.
 
+- __Refactoring__
+    -   I could probably find a way to refactor the code to use more functions and less repeated code.
+
 ## Design
 * [Back to index](#index) 
 * [Back to top of README.md](#about-my-project) 
@@ -112,6 +115,7 @@ My goals have been to:
 -   ### Process Flow
     -   I have developed the game with a process flow as the basis for the game logic and supporting JavaScript.
     -   I do also want to refine the keyboard handling and visualisation of player and gaoler health for the battle to escape.
+    -   I could probably find a way to refactor the code to use more functions and less repeated code.
     
     A diagram of the process flow is <details><summary>here.</summary>
     <img src="./assets/images/processflow.PNG">  
