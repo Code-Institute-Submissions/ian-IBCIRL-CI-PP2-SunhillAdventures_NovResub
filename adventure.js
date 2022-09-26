@@ -482,7 +482,7 @@ function handleKeys(event) {
                 PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
                 GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
                 window.location.reload();
-                alert("You lost the fight!\n\nTry defending (D) more next time !");
+                alert("You lost the fight!\n\nTry defending (D) more next time !\n\nOR find the hammer !");
                 return startGame();
             } else if (state.gaolerhealth <= 0) {
                 PlayerBarDiv.innerHTML = '<h3>Player Won !' + '</h3>';
