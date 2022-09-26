@@ -115,13 +115,13 @@ function showChosenTextItem(TextItemNumber) {
     textElement.innerText = textItem.text;
 
     // set the background for the main div (or a default background)
-    urlLocation = textItem.Imgsrc || './assets/images/herringbone.PNG'
+    urlLocation = textItem.Imgsrc || './assets/images/herringbone.avif'
     console.log("URL location is: ", urlLocation)
     urlLocation = "url('" + urlLocation + "')"
     console.log("URL location is: ", urlLocation)
 
     mainDiv.style.backgroundImage = urlLocation;
-    // e.g. url('/assets/images/parquet1.PNG')
+    // e.g. url('/assets/images/parquet1.avif')
 
     const legtext = document.getElementById("legendtext")
     legtext.innerText = `scene #${textItem.item}`
@@ -159,7 +159,7 @@ function showChosenTextItem(TextItemNumber) {
 
 
             // consider adding images
-            button.style.backgroundImage = "url('./assets/images/herringbone.PNG')";
+            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
 
             button.style.backgroundColor = "orange";
 
@@ -502,12 +502,12 @@ function handleKeys(event) {
 const textItems = [{
         item: 1,
         text: "You wake up on a parquet wooden floor, in a small, dimly lit room.",
-        Imgsrc: "./assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -534,12 +534,12 @@ const textItems = [{
     {
         item: 2,
         text: "You wake up on a cold white marble floor, in a small, dimly lit room.",
-        Imgsrc: "./assets/images/coldwhitemarble.PNG",
+        Imgsrc: "./assets/images/coldwhitemarble.avif",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/herringbone.PNG",
+                Imgsrc: "./assets/images/herringbone.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -566,13 +566,13 @@ const textItems = [{
     },
     {
         item: 3,
-        Imgsrc: "./assets/images/greenandwhitemarble.PNG",
+        Imgsrc: "./assets/images/greenandwhitemarble.avif",
         text: "You wake up on a green and white marble floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -599,13 +599,13 @@ const textItems = [{
     },
     {
         item: 4,
-        Imgsrc: "./assets/images/roughlimestone.PNG",
+        Imgsrc: "./assets/images/roughlimestone.avif",
         text: "You wake up on a rough limestone floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -634,11 +634,11 @@ const textItems = [{
     {
         item: 5,
         text: "You wake up on a cold pink granite floor, in a small, dimly lit room.",
-        Imgsrc: "./assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
                 text: "Look around",
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
@@ -666,11 +666,11 @@ const textItems = [{
     {
         item: 6,
         text: "You see a narrow, barred window, high up on the wall in front of you. You also notice a low hanging light overhead, and a light switch beside a door behind you.",
-        Imgsrc: "./assets/images/parquet1.PNG",
+        Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
                 text: "Stand up, avoiding the hanging light.",
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 nextText: 8,
             },
             {
@@ -734,7 +734,7 @@ const textItems = [{
         option: [{
                 op: 1,
                 text: "Look around",
-                Imgsrc: "./assets/images/parquet1.PNG",
+                Imgsrc: "./assets/images/parquet1.avif",
                 nextText: 6,
                 setState: {
                     roomlayout: true,

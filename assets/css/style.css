@@ -85,6 +85,10 @@ h6 {
     padding: 1%;
 }
 
+#player {
+    color: black;
+}
+
 #scenetext {
     padding: 1%;
     color: wheat;
