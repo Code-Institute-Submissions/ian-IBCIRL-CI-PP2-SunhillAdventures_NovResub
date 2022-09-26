@@ -170,7 +170,6 @@ My goals have been to:
 -   [Google Fonts:](https://fonts.google.com/) for 'Lato' and 'Oswald' fonts.
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for visual cues.
 -   [Convertio JPG to avif:](https://convertio.co/jpg-avif/) to convert PNG and JPG to avif images.
--   [TinyPNG](https://tinypng.com/) to reduce the size of PNG images and improve Lighthouse score.
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 -   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
@@ -199,13 +198,17 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 
 [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
+<details><summary>Index HTML Results</summary>
+<img src="./assets/docs/wave.PNG">
+</details>
+
 [HTML Validator](https://validator.w3.org/)
 Good results all round.
 
 [Google Chrome Lighthouse Validator results.](https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/user-flows.md) 
 
-<details><summary>Index HTML Results</summary>
-<img src="./assets/docs/wave.PNG">
+<details><summary>Lighthouse Results</summary>
+<img src="./assets/docs/lighthouse.PNG">
 </details>
 
 ### Browser Compatibility
