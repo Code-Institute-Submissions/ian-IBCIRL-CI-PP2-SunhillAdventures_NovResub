@@ -428,11 +428,13 @@ function handleKeys(event) {
             //console.log(textElement.innerHTML);
 
             // if we are in the fight scene then the button text can be set - skip if not
+            if (debugcheck) {
             let keyinfo = document.getElementById('DpressedBtn');
             if (keyinfo) {
                 keyinfo.innerText = event.key;
                 console.log(event.key);
             }
+        }
 
 
         } else if (event.type === 'keyup') {
