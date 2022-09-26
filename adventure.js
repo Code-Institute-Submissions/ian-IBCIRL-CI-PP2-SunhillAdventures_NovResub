@@ -4,7 +4,7 @@ console.log(adventure);
 
 
 // control whether to print alerts and console messages.
-debugcheck = 0;
+let debugcheck = 0;
 
 // state is initially an empty object.
 // This will keep track of our game player and objects etc.
@@ -16,7 +16,7 @@ console.log("text element is:");
 console.log(textElement);
 console.log("text element innertext  is:");
 console.log(textElement.innerText);
-textElement.innerHTML = "Hello World!!"
+textElement.innerHTML = "Hello World!!";
 console.log(textElement.innerHTML);
 
 //getting the main div 
@@ -31,8 +31,8 @@ console.log("Inner Text Length is:", optionButtonsElement.innerText.length);
 
 // react if mouse leaves the div (user may be leaving game)
 function waitDontGo() {
-    textElement.innerHTML = "Wait !!! Don't GO !"
-    console.log("Wait !!! Don't GO !")
+    textElement.innerHTML = "Wait !!! Don't GO !";
+    console.log("Wait !!! Don't GO !");
 
 }
 
@@ -81,50 +81,50 @@ function startGame(inputx) {
 
 //function to select game option
 function selectOption(option) {
-    console.log("Option selected is:", option)
+    console.log("Option selected is:", option);
     // get the next block of story text and options
-    const nextTextChoiceItem = option.nextText
+    const nextTextChoiceItem = option.nextText;
 
     // option to restart game if end not successful
     if (nextTextChoiceItem <= 0) {
-        return startGame()
+        return startGame();
     }
 
     // update and replace the current state
-    state = Object.assign(state, option.setState)
+    state = Object.assign(state, option.setState);
 
     // show the next chosen item
-    showChosenTextItem(nextTextChoiceItem)
+    showChosenTextItem(nextTextChoiceItem);
 }
 
 //function to show particular text item
 function showChosenTextItem(TextItemNumber) {
 
     // get the desired text for describing the scene
-    let textItem = textItems.find(o => o.item === TextItemNumber)
+    let textItem = textItems.find(o => o.item === TextItemNumber);
     // took a while to get this to work - o is a placeholder and => is a function pointer
     // helpful demo here https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
 
-    console.log("Text Item is: ", textItem)
+    console.log("Text Item is: ", textItem);
 
     //log the text for the element describing the scene
-    console.log("Text Item is: ", textItem)
-    console.log("Text Item Text is: ", textItem.text)
+    console.log("Text Item is: ", textItem);
+    console.log("Text Item Text is: ", textItem.text);
 
     //set the text for the element describing the scene
     textElement.innerText = textItem.text;
 
     // set the background for the main div (or a default background)
-    urlLocation = textItem.Imgsrc || './assets/images/herringbone.avif'
-    console.log("URL location is: ", urlLocation)
-    urlLocation = "url('" + urlLocation + "')"
-    console.log("URL location is: ", urlLocation)
+    let urlLocation = textItem.Imgsrc || './assets/images/herringbone.avif';
+    console.log("URL location is: ", urlLocation);
+    urlLocation = "url('" + urlLocation + "')";
+    console.log("URL location is: ", urlLocation);
 
     mainDiv.style.backgroundImage = urlLocation;
     // e.g. url('/assets/images/parquet1.avif')
 
-    const legtext = document.getElementById("legendtext")
-    legtext.innerText = `scene #${textItem.item}`
+    const legtext = document.getElementById("legendtext");
+    legtext.innerText = `scene #${textItem.item}`;
 
     //clear out the current options, and replace with the options for the current scene
     while (optionButtonsElement.firstChild) {
@@ -133,28 +133,28 @@ function showChosenTextItem(TextItemNumber) {
     textItem.option.forEach(option => {
         if (showOption(option)) {
             // create a new button
-            const button = document.createElement('button')
+            const button = document.createElement('button');
 
             // set the text of the current action button
-            button.innerHTML = option.text
+            button.innerHTML = option.text;
 
             // set the class style for the new button
-            button.classList.add('btn')
+            button.classList.add('btn');
 
             console.log("option identity is: ", option.identity)
             // set the id for the new button
-            button.id = option.identity
+            button.id = option.identity;
 
             // set a function for clicking the button
-            button.addEventListener('click', () => selectOption(option))
+            button.addEventListener('click', () => selectOption(option));
 
             // handle fight buttons
             if (option.identity === "DpressedBtn") {
-                button.addEventListener('click', () => processdefend())
+                button.addEventListener('click', () => processdefend());
             } else if (option.identity === "SpressedBtn") {
-                button.addEventListener('click', () => processrighthook())
+                button.addEventListener('click', () => processrighthook());
             } else if (option.identity === "ApressedBtn") {
-                button.addEventListener('click', () => processlefthook())
+                button.addEventListener('click', () => processlefthook());
             }
 
 
@@ -170,7 +170,7 @@ function showChosenTextItem(TextItemNumber) {
             }
 
             // add the button to the page
-            optionButtonsElement.appendChild(button)
+            optionButtonsElement.appendChild(button);
         }
     });
 
@@ -186,7 +186,7 @@ function processdefend() {
 
     if (debugcheck) alert("defending");
 
-    defend = generateRandom(1, 50);
+    let defend = generateRandom(1, 50);
 
     // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
     state.playerhealth -= generateRandom(1, 55);
@@ -196,8 +196,9 @@ function processdefend() {
     state.playerhealth += defend;
 
     //take into account if the hammer is being used, if found
+    let hammer = 0;
     if (state.hammer) {
-        hammer = 100;
+        hammer = 50;
     } else hammer = 0;
 
     state.gaolerhealth -= hammer;
@@ -244,10 +245,11 @@ function processrighthook() {
     // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
     state.playerhealth -= generateRandom(1, 55);
     state.gaolerhealth -= generateRandom(1, 50);
-
+    
     //take into account if the hammer is being used, if found
+    let hammer = 0;
     if (state.hammer) {
-        hammer = 100;
+        hammer = 50;
     } else hammer = 0;
 
     state.gaolerhealth -= hammer;
@@ -338,7 +340,7 @@ function btnClicked() {
 
 
 function showOption(option) {
-    console.log("Showing Option: ", option)
+    console.log("Showing Option: ", option);
     // return true if there is no requiredState or the requiredState itself
     return option.requiredState == null || option.requiredState(state);
 }
@@ -368,25 +370,25 @@ function handleKeys(event) {
     // set element handles for various divs and displays to process and display keypress results.
 
     if (state.fight == false) {
-        alert("not in a fight YET !")
+        alert("not in a fight YET !");
         return;
     }
-
+    let defend = 0;
     if (event.key == 'a' || event.key == 's' || event.key == 'd') {
         if (event.key == 'd' || event.key == 'D' ) {
             defend = generateRandom(1, 50);
-            document.getElementById('last-key').innerText = "Defending!"
+            document.getElementById('last-key').innerText = "Defending!";
         } else defend = 0;
         if (event.key == 'a' || event.key == 'A' ) {
-            document.getElementById('last-key').innerText = "Left Hook!"
+            document.getElementById('last-key').innerText = "Left Hook!";
             defend = 0;
         }
         if (event.key == 's' || event.key == 'S' ) {
-            document.getElementById('last-key').innerText = "Right Hook!"
+            document.getElementById('last-key').innerText = "Right Hook!";
             defend = 0;
         }
     } else {
-        alert("invalid key - use A, S or D")
+        alert("invalid key - use A, S or D");
         return;
     }
 
@@ -428,8 +430,8 @@ function handleKeys(event) {
             // if we are in the fight scene then the button text can be set - skip if not
             let keyinfo = document.getElementById('DpressedBtn');
             if (keyinfo) {
-                keyinfo.innerText = event.key
-                console.log(event.key)
+                keyinfo.innerText = event.key;
+                console.log(event.key);
             }
 
 
@@ -454,6 +456,7 @@ function handleKeys(event) {
             //take into account any player defending
             state.playerhealth += defend;
 
+            let hammer = 0;
             //take into account if the hammer is being used, if found
             if (state.hammer) {
                 hammer = 100;
@@ -926,7 +929,7 @@ const textItems = [{
             },
         ]
     },
-]
+];
 
 
 //game starts here !

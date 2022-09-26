@@ -173,6 +173,7 @@ My goals have been to:
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 -   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
+-   [JSHint](https://jshint.com/) was used to check for Javascript errors and recommendations
 
 ## Testing 
 * [Back to index](#index) 
