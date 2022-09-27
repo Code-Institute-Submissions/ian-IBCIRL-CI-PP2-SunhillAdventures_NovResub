@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **September 26th, 2022**
+The last update to this file was: **September 27th, 2022**
 
 ## Gitpod Reminders
 
@@ -106,7 +106,7 @@ My goals have been to:
     - Sprites (graphical player and enemy representations, beyond the health bars shown) could be added to provide more visual context for participants who would like to experience more about the context of the game and its characters.
 
 - __Refactoring__
-    -   I could probably find a way to refactor the code to use more functions and less repeated code.
+    -   I could probably find a way to refactor the code to use more functions and less repeated code, but don't want to risk breaking logic at this stage.
 
 ## Design
 * [Back to index](#index) 
@@ -139,9 +139,9 @@ My goals have been to:
     - Colors from http://www.paletton.com/ 
 
 -   ### Colour Scheme
-    -  A palette have been chosen to convey a sense of adventure. 
+    -  A palette has been chosen to convey a sense of adventure. 
     
-    An image of the palette is <details><summary>here.</summary>
+    An image of the potential palette is <details><summary>here.</summary>
     <img src="./assets/docs/NZ+Color+Palettes-01.jpg"> 
     </details>
 
@@ -186,6 +186,7 @@ My goals have been to:
 
 -   ### Responsiveness
     -   I have developed the game to be responsive on mobile devices and browsers.
+    -   Updating responsiveness score with AVIF rather than PNG results in images not loading on older Apple iOS - does work on iOS 16 now.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
 
     Screenshots of the responsiveness are <details><summary>here.</summary>
@@ -194,6 +195,7 @@ My goals have been to:
     <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
     </details> 
 
+-   [JSHint](https://jshint.com/) was used to test for Javascript errors and recommendations
 
 ### Validator Testing
 ### WAVE (Web Accessibility Evaluation Tool)
@@ -350,7 +352,7 @@ I have continually developed this repository to help give you the best experienc
 
 **24 September 2022:** added fight state to distinguish need to handle keys and filter keys needed.
 
-**26 September 2022:** significantly updated readme and corrected validator reccomendations.
+**27 September 2022:** significantly updated readme and corrected validator reccomendations.
 
 ------
 
