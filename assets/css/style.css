@@ -137,7 +137,7 @@ h6 {
 footer {
     color: black;
     background: white;
-    width: 35%;
+    width: 55%;
 }
 
 /* style the main central buttons */
@@ -235,7 +235,17 @@ footer {
         font-size: 70%;
     }
 
-
+    #menu {
+        padding: 1rem;
+        background-color: rgb(32, 7, 80);
+        position: relative;
+        top: 1%;
+        line-height: 100%;
+        margin: 2%;
+        color: white;
+        text-transform: uppercase;
+        opacity: 85%;
+    }
 }
 
 /* Screen sizes from 330px wide or below */
