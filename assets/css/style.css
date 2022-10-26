@@ -19,7 +19,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -66,7 +66,7 @@ h2 {
 .spanh2 {
     color: black;
     background: wheat;
-    font-size:x-large;
+    font-size: x-large;
     display: inline-block;
     padding: 1%;
     border: 3px solid red;
@@ -116,7 +116,7 @@ h6 {
     grid-template-columns: repeat(2, auto);
 }
 
-.fight-span{
+.fight-span {
     background-color: orange;
     margin: 2%;
     padding: 2%;
@@ -125,13 +125,19 @@ h6 {
     grid-template-columns: repeat(2, auto);
 }
 
-.keyspressed-span{
+.keyspressed-span {
     background-color: rgb(32, 7, 80);
     margin: 2%;
     padding: 2%;
     gap: 2%;
     display: grid;
     grid-template-columns: repeat(2, auto);
+}
+
+footer {
+    color: black;
+    background: white;
+    width: 35%;
 }
 
 /* style the main central buttons */
@@ -157,7 +163,7 @@ h6 {
     border-color: black;
 }
 
-#menu{
+#menu {
     padding: 2rem;
     background-color: rgb(32, 7, 80);
     position: relative;
@@ -173,54 +179,54 @@ h6 {
 /* Screen sizes from 1200px wide or above */
 @media screen {
     #menu {
-       clear: left;
-       float: left;
-       margin-left: .25rem;
-       margin-bottom: .75rem;
-       line-height: 150%;
-       width: 100%;
+        clear: left;
+        float: left;
+        margin-left: .25rem;
+        margin-bottom: .75rem;
+        line-height: 150%;
+        width: 100%;
     }
- }
- 
- /* Screen sizes from 1200px wide or below */
- @media screen and (max-width: 1200px) {
+}
+
+/* Screen sizes from 1200px wide or below */
+@media screen and (max-width: 1200px) {
     #menu {
-       clear: left;
-       float: left;
-       margin-left: .75rem;
-       margin-bottom: .75rem;
-       line-height: 150%;
-       width: 95%;
+        clear: left;
+        float: left;
+        margin-left: .75rem;
+        margin-bottom: .75rem;
+        line-height: 150%;
+        width: 95%;
     }
- 
- }
- 
- /* Screen sizes from 780px wide or below */
- @media screen and (max-width: 780px) {
+
+}
+
+/* Screen sizes from 780px wide or below */
+@media screen and (max-width: 780px) {
     * {
-       margin: 0;
-       padding: 0;
+        margin: 0;
+        padding: 0;
     }
- 
- }
- 
- /* Screen sizes from 470px wide or below */
- @media screen and (max-width: 470px) {
- 
+
+}
+
+/* Screen sizes from 470px wide or below */
+@media screen and (max-width: 470px) {
+
     * {
-       margin: 0;
-       padding: 0;
+        margin: 0;
+        padding: 0;
     }
- 
- 
- }
- 
- /* Screen sizes from 330px wide or below */
- @media screen and (max-width: 330px) {
+
+
+}
+
+/* Screen sizes from 330px wide or below */
+@media screen and (max-width: 330px) {
     * {
-       margin: 0;
-       padding: 0;
+        margin: 0;
+        padding: 0;
     }
- 
- 
- }
+
+
+}
