@@ -129,6 +129,7 @@ My goals have been to:
     <img src="./assets/docs/responsive.png">  
     
     and and earlier version here.
+    
     <img src="./assets/docs/responsivenesstestingscreen2.png">  
     
     
@@ -193,6 +194,7 @@ My goals have been to:
     <img src="./assets/docs/responsive.png">  
     
     and an earlier version here.
+
     <img src="./assets/docs/responsivenesstestingscreen2.png">  
     
 
