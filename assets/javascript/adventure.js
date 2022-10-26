@@ -196,12 +196,12 @@ function processdefend() {
     state.playerhealth += defend;
 
     //take into account if the hammer is being used, if found
-    let hammer = 0;
+    let hammerimpact = 0;
     if (state.hammer) {
-        hammer = 50;
-    } else hammer = 0;
+        hammerimpact = 50;
+    } else hammerimpact = 0;
 
-    state.gaolerhealth -= hammer;
+    state.gaolerhealth -= hammerimpact;
 
     PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
     GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
@@ -247,12 +247,12 @@ function processrighthook() {
     state.gaolerhealth -= generateRandom(1, 50);
     
     //take into account if the hammer is being used, if found
-    let hammer = 0;
+    let hammerimpact = 0;
     if (state.hammer) {
-        hammer = 50;
-    } else hammer = 0;
+        hammerimpact = 50;
+    } else hammerimpact = 0;
 
-    state.gaolerhealth -= hammer;
+    state.gaolerhealth -= hammerimpact;
 
     PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
     GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
@@ -458,13 +458,12 @@ function handleKeys(event) {
             //take into account any player defending
             state.playerhealth += defend;
 
-            let hammer = 0;
-            //take into account if the hammer is being used, if found
+            let hammerimpact = 0;
             if (state.hammer) {
-                hammer = 100;
-            } else hammer = 0;
+                hammerimpact = 50;
+            } else hammerimpact = 0;
 
-            state.gaolerhealth -= hammer;
+            state.gaolerhealth -= hammerimpact;
 
             PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
             GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
@@ -520,8 +519,12 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Go back to sleep!",
-                nextText: generateRandom(1, 5),
+                text: "Step through door and prepare to attack !",
+                nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fight: true
+                },
             },
             {
                 op: 3,
@@ -539,12 +542,12 @@ const textItems = [{
     {
         item: 2,
         text: "You wake up on a cold white marble floor, in a small, dimly lit room.",
-        Imgsrc: "./assets/images/coldwhitemarble.avif",
+        Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/herringbone.avif",
+                Imgsrc: "./assets/images/parquet1.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -552,8 +555,12 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Go back to sleep!",
-                nextText: generateRandom(1, 5),
+                text: "Step through door and prepare to attack !",
+                nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fight: true
+                },
             },
             {
                 op: 3,
@@ -571,7 +578,7 @@ const textItems = [{
     },
     {
         item: 3,
-        Imgsrc: "./assets/images/greenandwhitemarble.avif",
+        Imgsrc: "./assets/images/parquet1.avif",
         text: "You wake up on a green and white marble floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
@@ -585,8 +592,12 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Go back to sleep!",
-                nextText: generateRandom(1, 5),
+                text: "Step through door and prepare to attack !",
+                nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fight: true
+                },
             },
             {
                 op: 3,
@@ -604,7 +615,7 @@ const textItems = [{
     },
     {
         item: 4,
-        Imgsrc: "./assets/images/roughlimestone.avif",
+        Imgsrc: "./assets/images/parquet1.avif",
         text: "You wake up on a rough limestone floor, in a small, dimly lit room.",
         option: [{
                 op: 1,
@@ -618,8 +629,12 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Go back to sleep!",
-                nextText: generateRandom(1, 5),
+                text: "Step through door and prepare to attack !",
+                nextText: 13,
+                setState: {
+                    gaoleralerted: true,
+                    fight: true
+                },
             },
             {
                 op: 3,
@@ -670,7 +685,7 @@ const textItems = [{
     },
     {
         item: 6,
-        text: "You see a narrow, barred window, high up on the wall in front of you. You also notice a low hanging light overhead, and a light switch beside a door behind you.",
+        text: "You see a door behind you.",
         Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,

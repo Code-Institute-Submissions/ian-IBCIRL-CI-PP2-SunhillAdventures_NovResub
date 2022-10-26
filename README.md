@@ -44,13 +44,13 @@ My goals have been to:
 10) utilising Javascript, HTML and CSS, with 
 11) Bootstrap's powerful, feature-packed frontend toolkit.
 
-### Project Additional Goals
+12) I have added a keyboard fight sequence at the end of the game (with buttons for mobile/touch)
+12a) For resubmission i added the option to go straight to the fight to shorten the assessment/game play
 
-12) I have decided to add a keyboard fight sequence at the end of the game (with buttons for mobile/touch)
-13) so i will create the player (possibly adding the option to name the player) and enemy (gaoler)
-14) add attacking keys ASD with event listeners and button onclick handlers
-15) add health bar
-16) game completion notification (win/lose)
+13) so i created the player (possibly later adding the option to name the player) and enemy (gaoler)
+14) I added attacking keys ASD with event listeners and button onclick handlers
+15) I added health bar
+16) I added game completion notification (win/lose) followed by restart
 
 
 ------
@@ -117,20 +117,20 @@ My goals have been to:
     -   I do also want to refine the keyboard handling and visualisation of player and gaoler health for the battle to escape.
     -   I could probably find a way to refactor the code to use more functions and less repeated code.
     
-    A diagram of the process flow is <details><summary>here.</summary>
-    <img src="./assets/images/processflow.PNG">  
-    </details> 
+    A diagram of the process flow is here.
+    <img src="./assets/docs/processflow.png">  
+    
 
 -   ### Responsiveness
     -   I have developed the game to be responsive on mobile devices and browsers.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
 
-    Screenshots of the responsiveness are <details><summary>here.</summary>
-    <img src="./assets/docs/responsive.PNG">  
-    </details>
-    and and earlier version <details><summary>here.</summary>
-    <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
-    </details> 
+    Screenshots of the responsiveness are here.
+    <img src="./assets/docs/responsive.png">  
+    
+    and and earlier version here.
+    <img src="./assets/docs/responsivenesstestingscreen2.png">  
+    
     
 -   ### Imagery
     -   I am working to find images to choose that will be eye-catching, informative and bright.  The colours in the images will be chosen to help convey a sense of adventure and excitement. The images will show Adventure participants to align with the main story line of the adventure. They will be chosen to ensure the site is clear and easy to use.
@@ -141,18 +141,18 @@ My goals have been to:
 -   ### Colour Scheme
     -  A palette has been chosen to convey a sense of adventure. 
     
-    An image of the potential palette is <details><summary>here.</summary>
+    An image of the potential palette is here.
     <img src="./assets/docs/NZ+Color+Palettes-01.jpg"> 
-    </details>
+    
 
 -   ### Typography
     -   Google Fonts are imported for potential use from Oswald fonts into assests\css\style.css. 
 
 -   ### Wireframes
 
-    Home Page <details><summary>Wireframe 1</summary>
-    <img src="./assets/images/wireframe-homepage.PNG">
-    </details>
+    Home Page Wireframe 1
+    <img src="./assets/docs/wireframe-homepage.png">
+    
 
 ## Technologies Used
 * [Back to index](#index) 
@@ -189,20 +189,21 @@ My goals have been to:
     -   Updating responsiveness score with AVIF rather than PNG results in images not loading on older Apple iOS - does work on iOS 16 now.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
 
-    Screenshots of the responsiveness are <details><summary>here.</summary>
-    <img src="./assets/docs/responsive.PNG">  
-    </details> and an earlier version <details><summary>here.</summary>
-    <img src="./assets/docs/responsivenesstestingscreen2.PNG">  
-    </details> 
+    Screenshots of the responsiveness are here.
+    <img src="./assets/docs/responsive.png">  
+    
+    and an earlier version here.
+    <img src="./assets/docs/responsivenesstestingscreen2.png">  
+    
 
 -   [JSHint](https://jshint.com/) was used to test for Javascript errors and recommendations
 
 ### Validator Testing
 ### WAVE (Web Accessibility Evaluation Tool)
 Good results. No errors. Managed to eliminate all alerts and contrast errors.
-<details><summary>WAVE Results</summary>
-<img src="./assets/docs/wave.PNG">
-</details>
+
+WAVE Results
+<img src="./assets/docs/wave.png">
 
 [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 
@@ -210,20 +211,19 @@ Good results. No errors. Managed to eliminate all alerts and contrast errors.
 [HTML Validator](https://validator.w3.org/)
 Good results all round.
 
-<details><summary>Index HTML Results</summary>
-<img src="./assets/docs/htmlvalidation.PNG">
-</details>
+Index HTML Results
+<img src="./assets/docs/htmlvalidation.png">
 
-<details><summary>Index CSS Results</summary>
-<img src="./assets/docs/cssvalidation.PNG">
-</details>
+
+Index CSS Results
+<img src="./assets/docs/cssvalidation.png">
+
 
 
 [Google Chrome Lighthouse Validator results.](https://github.com/GoogleChrome/lighthouse/blob/HEAD/docs/user-flows.md) 
 
-<details><summary>Lighthouse Results</summary>
-<img src="./assets/docs/lighthouse.PNG">
-</details>
+Lighthouse Results
+<img src="./assets/docs/lighthouse.png">
 
 ### Browser Compatibility
 
