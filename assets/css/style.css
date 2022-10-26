@@ -207,6 +207,15 @@ footer {
         margin: 0;
         padding: 0;
     }
+    
+    h1 {
+        font-size: 90%;
+     }
+  
+     h3 {
+        font-size: 90%;
+     }
+
 
 }
 
@@ -218,6 +227,14 @@ footer {
         padding: 0;
     }
 
+    h1 {
+        font-size: 70%;
+     }
+  
+     h3 {
+        font-size: 70%;
+     }
+
 
 }
 
@@ -228,5 +245,11 @@ footer {
         padding: 0;
     }
 
-
+    h1 {
+        font-size: 50%;
+     }
+  
+     h3 {
+        font-size: 50%;
+     }
 }
