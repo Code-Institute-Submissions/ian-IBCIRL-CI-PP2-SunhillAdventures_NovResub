@@ -19,7 +19,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 100vw;
     height: 100vh;
 }
@@ -164,12 +164,12 @@ footer {
 }
 
 #menu {
-    padding: 2rem;
+    padding: 1rem;
     background-color: rgb(32, 7, 80);
     position: relative;
-    top: 5%;
-    line-height: 150%;
-    margin: 5%;
+    top: 1%;
+    
+    margin: 1%;
     color: white;
     text-transform: uppercase;
     opacity: 85%;
@@ -183,7 +183,7 @@ footer {
         float: left;
         margin-left: .25rem;
         margin-bottom: .75rem;
-        line-height: 150%;
+       
         width: 100%;
     }
 }
@@ -195,7 +195,7 @@ footer {
         float: left;
         margin-left: .75rem;
         margin-bottom: .75rem;
-        line-height: 150%;
+      
         width: 95%;
     }
 
