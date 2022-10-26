@@ -505,7 +505,7 @@ function handleKeys(event) {
 // and what their action choices or options are.
 const textItems = [{
         item: 1,
-        text: "You wake up on a parquet wooden floor, in a small, dimly lit room.",
+        text: "You wake up on a wooden floor, in a dimly lit room.",
         Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
@@ -541,7 +541,7 @@ const textItems = [{
     },
     {
         item: 2,
-        text: "You wake up on a cold white marble floor, in a small, dimly lit room.",
+        text: "You wake up on a cold white marble floor.",
         Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
@@ -579,7 +579,7 @@ const textItems = [{
     {
         item: 3,
         Imgsrc: "./assets/images/parquet1.avif",
-        text: "You wake up on a green and white marble floor, in a small, dimly lit room.",
+        text: "You wake up on a green and white marble floor",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -616,7 +616,7 @@ const textItems = [{
     {
         item: 4,
         Imgsrc: "./assets/images/parquet1.avif",
-        text: "You wake up on a rough limestone floor, in a small, dimly lit room.",
+        text: "You wake up on a rough limestone floor.",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -653,7 +653,7 @@ const textItems = [{
 
     {
         item: 5,
-        text: "You wake up on a cold pink granite floor, in a small, dimly lit room.",
+        text: "You wake up on a cold pink granite floor.",
         Imgsrc: "./assets/images/parquet1.avif",
         option: [{
                 op: 1,
@@ -781,7 +781,7 @@ const textItems = [{
     },
     {
         item: 9,
-        text: "As you sit up, you notice a loose section of flooring.",
+        text: "You notice loose flooring.",
         setState: {
             floorloose: true,
             hammer: false
@@ -807,14 +807,14 @@ const textItems = [{
             },
             {
                 op: 4,
-                text: "Put your head in your hands and try to remember how you got here.",
+                text: "Put head in hands...",
                 nextText: generateRandom(1, 5),
             },
         ]
     },
     {
         item: 10,
-        text: "You can just about see out the window and can see the sun rising in the east.",
+        text: "Out the window, you see the sun rising",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -843,7 +843,7 @@ const textItems = [{
     },
     {
         item: 11,
-        text: "You reach the door and manage to open it gently inwards, although it squeaks loudly. You can hear footsteps coming from the right.",
+        text: "The door squeaks! You hear footsteps coming!",
         option: [{
                 op: 1,
                 text: "Close the door",
@@ -854,7 +854,7 @@ const textItems = [{
             },
             {
                 op: 2,
-                text: "Step through door and prepare to attack !",
+                text: "Step through door and attack !",
                 nextText: 13,
                 setState: {
                     gaoleralerted: true,
@@ -877,7 +877,7 @@ const textItems = [{
     },
     {
         item: 12,
-        text: "You can just about see out the window and can see the sun rising in the east.",
+        text: "You see out the window and the sun rising.",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -906,7 +906,7 @@ const textItems = [{
     },
     {
         item: 13,
-        text: "You step through the door and are faced with a huge gaoler, intent on knocking you out again.",
+        text: "You step through and see a huge gaoler!",
         option: [{
                 op: 1,
                 text: "Swing right hook (S)",
