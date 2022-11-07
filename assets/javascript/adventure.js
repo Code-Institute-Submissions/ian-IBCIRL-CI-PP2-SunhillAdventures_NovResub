@@ -141,10 +141,11 @@ function showChosenTextItem(TextItemNumber) {
             // set the class style for the new button
             button.classList.add('btn');
 
-            console.log("option identity is: ", option.identity)
-            // set the id for the new button
-            button.id = option.identity;
-
+            if (option.identity) {
+                console.log("option identity is: ", option.identity)
+                // set the id for the new button
+                button.id = option.identity;
+            }
             // set a function for clicking the button
             button.addEventListener('click', () => selectOption(option));
 
@@ -245,7 +246,7 @@ function processrighthook() {
     // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
     state.playerhealth -= generateRandom(1, 55);
     state.gaolerhealth -= generateRandom(1, 50);
-    
+
     //take into account if the hammer is being used, if found
     let hammerimpact = 0;
     if (state.hammer) {
@@ -375,15 +376,15 @@ function handleKeys(event) {
     }
     let defend = 0;
     if (event.key == 'a' || event.key == 's' || event.key == 'd') {
-        if (event.key == 'd' || event.key == 'D' ) {
+        if (event.key == 'd' || event.key == 'D') {
             defend = generateRandom(1, 50);
             document.getElementById('last-key').innerText = "Defending!";
         } else defend = 0;
-        if (event.key == 'a' || event.key == 'A' ) {
+        if (event.key == 'a' || event.key == 'A') {
             document.getElementById('last-key').innerText = "Left Hook!";
             defend = 0;
         }
-        if (event.key == 's' || event.key == 'S' ) {
+        if (event.key == 's' || event.key == 'S') {
             document.getElementById('last-key').innerText = "Right Hook!";
             defend = 0;
         }
@@ -429,12 +430,12 @@ function handleKeys(event) {
 
             // if we are in the fight scene then the button text can be set - skip if not
             if (debugcheck) {
-            let keyinfo = document.getElementById('DpressedBtn');
-            if (keyinfo) {
-                keyinfo.innerText = event.key;
-                console.log(event.key);
+                let keyinfo = document.getElementById('DpressedBtn');
+                if (keyinfo) {
+                    keyinfo.innerText = event.key;
+                    console.log(event.key);
+                }
             }
-        }
 
 
         } else if (event.type === 'keyup') {
@@ -476,7 +477,7 @@ function handleKeys(event) {
                 ApressedBtn.style.backgroundColor = 'white';
                 SpressedBtn.style.backgroundColor = 'white';
             }, 75);
- 
+
             if (state.playerhealth <= 0) {
                 PlayerBarDiv.innerHTML = '<h3>Player Lost !' + '</h3>';
                 GaolerBarDiv.innerHTML = '<h3>Gaoler Won !' + '</h3>';
@@ -511,6 +512,7 @@ const textItems = [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                identity: "Button1",
                 Imgsrc: "./assets/images/parquet1.avif",
                 setState: {
                     roomlayout: true,
@@ -521,6 +523,7 @@ const textItems = [{
                 op: 2,
                 text: "Step through door and prepare to attack !",
                 nextText: 13,
+                identity: "Button2",
                 setState: {
                     gaoleralerted: true,
                     fight: true
@@ -529,11 +532,13 @@ const textItems = [{
             {
                 op: 3,
                 text: "Stand up.",
+                identity: "Button3",
                 nextText: 8,
             },
             {
                 op: 4,
                 text: "Sit up.",
+                identity: "Button4",
                 nextText: 9,
 
             },
@@ -882,6 +887,7 @@ const textItems = [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
+                identity: "Button1",
                 setState: {
                     timeofday: true
                 },
