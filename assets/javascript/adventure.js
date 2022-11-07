@@ -59,8 +59,8 @@ function startGame(inputx) {
     PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
     GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
 
-    PlayerBarDiv.style.backgroundColor = 'green';
-    GaolerBarDiv.style.backgroundColor = 'blue';
+    PlayerBarDiv.style.backgroundColor = 'lightgreen';
+    GaolerBarDiv.style.backgroundColor = 'lightblue';
 
     let pwidth = state.playerhealth / 16 + 40;
     PlayerBarDiv.style.width = pwidth + '%';
@@ -115,7 +115,7 @@ function showChosenTextItem(TextItemNumber) {
     textElement.innerText = textItem.text;
 
     // set the background for the main div (or a default background)
-    let urlLocation = textItem.Imgsrc || './assets/images/herringbone.avif';
+    let urlLocation = textItem.Imgsrc || './assets/images/parquet1.avif';
     console.log("URL location is: ", urlLocation);
     urlLocation = "url('" + urlLocation + "')";
     console.log("URL location is: ", urlLocation);
@@ -159,8 +159,8 @@ function showChosenTextItem(TextItemNumber) {
             }
 
 
-            // consider adding images
-//            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
+            // consider adding images to buttons - removed for accessibility
+            //            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
 
             button.style.backgroundColor = "black";
 
@@ -208,8 +208,8 @@ function processdefend() {
 
     setTimeout(function () {
         // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
-        PlayerBarDiv.style.backgroundColor = 'green';
-        GaolerBarDiv.style.backgroundColor = 'blue';
+        PlayerBarDiv.style.backgroundColor = 'lightgreen';
+        GaolerBarDiv.style.backgroundColor = 'lightblue';
     }, 75);
 
     if (state.playerhealth <= 0) {
@@ -259,8 +259,8 @@ function processrighthook() {
 
     setTimeout(function () {
         // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
-        PlayerBarDiv.style.backgroundColor = 'green';
-        GaolerBarDiv.style.backgroundColor = 'blue';
+        PlayerBarDiv.style.backgroundColor = 'lightgreen';
+        GaolerBarDiv.style.backgroundColor = 'lightblue';
     }, 75);
 
     if (state.playerhealth <= 0) {
@@ -304,8 +304,8 @@ function processlefthook() {
 
     setTimeout(function () {
         // reset colour of player div and gaoler div (might not need for fight sequences) if key down detected
-        PlayerBarDiv.style.backgroundColor = 'green';
-        GaolerBarDiv.style.backgroundColor = 'blue';
+        PlayerBarDiv.style.backgroundColor = 'lightgreen';
+        GaolerBarDiv.style.backgroundColor = 'lightblue';
     }, 75);
 
     if (state.playerhealth <= 0) {
@@ -372,14 +372,14 @@ function handleKeys(event) {
     if (event.key == 'a' || event.key == 's' || event.key == 'd') {
         if (event.key == 'd' || event.key == 'D') {
             defend = generateRandom(1, 50);
-            document.getElementById('last-key').innerText = "Defending!";
+            // document.getElementById('last-key').innerText = "Defending!";
         } else defend = 0;
         if (event.key == 'a' || event.key == 'A') {
-            document.getElementById('last-key').innerText = "Left Hook!";
+            // document.getElementById('last-key').innerText = "Left Hook!";
             defend = 0;
         }
         if (event.key == 's' || event.key == 'S') {
-            document.getElementById('last-key').innerText = "Right Hook!";
+            // document.getElementById('last-key').innerText = "Right Hook!";
             defend = 0;
         }
     } else {
@@ -394,12 +394,11 @@ function handleKeys(event) {
     let PlayerBarDiv = document.getElementById('player');
     let GaolerBarDiv = document.getElementById('gaoler');
 
-
     let downDiv = document.getElementById('key-down');
     let upDiv = document.getElementById('key-up');
-    let currentKeySpan = document.getElementById('current-key');
-    let lastKeySpan = document.getElementById('last-key');
-    console.log(lastKeySpan);
+    //    let currentKeySpan = document.getElementById('current-key');
+    //    let lastKeySpan = document.getElementById('last-key');
+    //    console.log(lastKeySpan);
 
     let pwidth = state.playerhealth / 13 + 20;
     PlayerBarDiv.style.width = pwidth + '%';
@@ -434,17 +433,17 @@ function handleKeys(event) {
 
         } else if (event.type === 'keyup') {
             // clear colour (to white) of down div and pressed div (might not need for fight sequences) if key down detected
-            currentKeySpan.innerHTML = '';
+            // currentKeySpan.innerHTML = '';
             downDiv.style.backgroundColor = 'white';
-            PlayerBarDiv.style.backgroundColor = 'green';
-            GaolerBarDiv.style.backgroundColor = 'blue';
+            PlayerBarDiv.style.backgroundColor = 'lightgreen';
+            GaolerBarDiv.style.backgroundColor = 'lightblue';
             ApressedBtn.style.backgroundColor = 'white';
             upDiv.style.backgroundColor = 'green';
 
 
             // set the "Last key pressed" suffix to the key and its code/keyCode (ASCII)
             // lastKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
-            currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
+            // currentKeySpan.innerHTML = event.key + ' (' + event.code + ' / ' + event.keyCode + ')';
 
             // randomly decrease health per round (player slightly weaker unless holding hammer or defending)
             state.playerhealth -= generateRandom(1, 55);

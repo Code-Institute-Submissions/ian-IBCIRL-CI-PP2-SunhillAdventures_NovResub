@@ -32,7 +32,7 @@ body {
     width: 90%;
     max-width: 90%;
     position: absolute;
-
+    border: 1px solid black;
 }
 
 /* centre the header text with a decent margin */
@@ -83,7 +83,6 @@ h5 {
 h6 {
     color: black;
     background: white;
-
     padding: 2%;
     border: 1px solid black;
 }
@@ -91,19 +90,23 @@ h6 {
 #legendtext {
     color: black;
     background: white;
+    margin: 2%;
     width: auto;
     padding: 2%;
+    border: 1px solid black;
 }
 
 #player {
-    color: white;
+    color: black;
 }
 
 #scenetext {
     padding: 2%;
+    margin: 2%;
     color: black;
     background: white;
     text-align: center;
+    border: 1px solid black;
 }
 
 /* format and arrange the game buttons in a nice 2x2 grid */
@@ -138,6 +141,7 @@ footer {
     color: black;
     background: white;
     width: 51%;
+    border: 1px solid black;
 }
 
 /* style the main central buttons */
@@ -187,7 +191,6 @@ footer {
         float: left;
         margin-left: .25rem;
         margin-bottom: .75rem;
-       
         width: 100%;
     }
 }
@@ -240,7 +243,6 @@ footer {
     }
 
     #menu {
-        padding: 1rem;
         position: relative;
         top: 1%;
         line-height: 100%;
