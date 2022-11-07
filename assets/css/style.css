@@ -158,10 +158,10 @@ footer {
 .btn {
     color: white;
     background: black;
-    background-color: white;
+    background-color: black;
     margin: 1%;
     padding: 2%;
-    border: 1px solid black;
+
 }
 
 /* arrange a hover style for the mouse hovering a button */
@@ -169,6 +169,7 @@ footer {
     border-color: RED;
     text-underline-offset: 3px;
     color:white;
+    background-color: black;
 }
 
 #menu {
