@@ -27,8 +27,8 @@ body {
 
 /* style the overall container class */
 .container {
-    background-color: blue;
-    color: wheat;
+    background-color: white;
+    color: black;
     width: 90%;
     max-width: 90%;
     position: absolute;
@@ -42,34 +42,34 @@ body {
 }
 
 .headertext {
-    background-color: darkolivegreen;
+    background-color: white;
 }
 
 h1 {
-    color: wheat;
-    background: darkolivegreen;
+    color: black;
+    background: white;
     display: inline-block;
     margin: 2%;
     padding: 2%;
-    border: 3px solid wheat;
+    border: 1px solid black;
 }
 
 h2 {
     color: black;
-    background: wheat;
+    background: white;
     display: inline-block;
     padding: 2%;
-    border: 3px solid red;
+    border: 1px solid black;
 }
 
 /* added as h2 is not allowed as child of span */
 .spanh2 {
     color: black;
-    background: wheat;
+    background: white;
     font-size: x-large;
     display: inline-block;
     padding: 1%;
-    border: 3px solid red;
+    border: 1px solid black;
 }
 
 h5 {
@@ -77,20 +77,20 @@ h5 {
     background: wheat;
     display: inline-block;
     padding: 2%;
-    border: 3px solid red;
+    border: 1px solid black;
 }
 
 h6 {
     color: black;
-    background: wheat;
+    background: white;
 
     padding: 2%;
-    border: 3px solid red;
+    border: 1px solid black;
 }
 
 #legendtext {
-    color: wheat;
-    background: rgb(107, 81, 47);
+    color: black;
+    background: white;
     width: auto;
     padding: 1%;
 }
@@ -101,14 +101,14 @@ h6 {
 
 #scenetext {
     padding: 1%;
-    color: wheat;
-    background: darkolivegreen;
+    color: black;
+    background: white;
     text-align: center;
 }
 
 /* format and arrange the game buttons in a nice 2x2 grid */
 .btn-grid {
-    background-color: red;
+    background-color: white;
     margin: 2%;
     padding: 2%;
     gap: 2%;
@@ -117,7 +117,7 @@ h6 {
 }
 
 .fight-span {
-    background-color: orange;
+    background-color: white;
     margin: 2%;
     padding: 2%;
     gap: 2%;
@@ -126,7 +126,7 @@ h6 {
 }
 
 .keyspressed-span {
-    background-color: rgb(32, 7, 80);
+    background-color: white;
     margin: 2%;
     padding: 2%;
     gap: 2%;
@@ -142,20 +142,20 @@ footer {
 
 /* style the main central buttons */
 .btnheadertext {
-    color: darkolivegreen;
-    background-color: wheat;
+    color: black;
+    background-color:white;
     margin: 2%;
     padding: 5%;
-    border: 3px solid wheat;
+    border: 1px solid black;
 }
 
 /* style the individual buttons */
 .btn {
-    color: white;
-    background-color: blue;
+    color: black;
+    background-color: white;
     margin: 2%;
     padding: 5%;
-    border: 5px solid lightsteelblue;
+    border: 1px solid black;
 }
 
 /* arrange a hover style for the mouse hovering a button */
@@ -165,7 +165,7 @@ footer {
 
 #menu {
     padding: 1rem;
-    background-color: rgb(32, 7, 80);
+    background-color: black;
     position: relative;
     top: 1%;
     
@@ -237,12 +237,10 @@ footer {
 
     #menu {
         padding: 1rem;
-        background-color: rgb(32, 7, 80);
         position: relative;
         top: 1%;
         line-height: 100%;
         margin: 2%;
-        color: white;
         text-transform: uppercase;
         opacity: 85%;
     }
