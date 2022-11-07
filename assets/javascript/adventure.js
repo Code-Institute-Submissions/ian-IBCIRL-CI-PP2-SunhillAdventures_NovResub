@@ -160,15 +160,9 @@ function showChosenTextItem(TextItemNumber) {
 
 
             // consider adding images
-            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
+//            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
 
-            button.style.backgroundColor = "orange";
-
-            if (button.style.backgroundColor === "orange") {
-                button.style.backgroundColor = "green";
-            } else {
-                button.style.backgroundColor = "orange";
-            }
+            button.style.backgroundColor = "black";
 
             // add the button to the page
             optionButtonsElement.appendChild(button);
