@@ -136,8 +136,11 @@ My goals have been to:
 -   ### Imagery
     -   I am working to find images to choose that will be eye-catching, informative and bright.  The colours in the images will be chosen to help convey a sense of adventure and excitement. The images will show Adventure participants to align with the main story line of the adventure. They will be chosen to ensure the site is clear and easy to use.
 
-    - JPG to avif from https://convertio.co/jpg-avif/ 
     - Colors from http://www.paletton.com/ 
+    - main image from https://www.pexels.com/@jwfotografia/ 
+    - and earlier images from https://www.pexels.com/
+    - compressed with https://tinyjpg.com/ 
+    - JPG to avif from https://convertio.co/jpg-avif/ 
 
 -   ### Colour Scheme
     -  A palette has been chosen to convey a sense of adventure. 
