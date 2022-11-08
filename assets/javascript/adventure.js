@@ -905,7 +905,7 @@ const textItems = [{
     },
     {
         item: 13,
-        text: "You step through and see a huge gaoler!",
+        text: "You step forward and see a huge gaoler!",
         option: [{
                 op: 1,
                 text: "Swing right hook (S)",
