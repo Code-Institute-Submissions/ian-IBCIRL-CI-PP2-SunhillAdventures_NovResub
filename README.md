@@ -150,7 +150,7 @@ My goals have been to:
     
 
 -   ### Typography
-    -   Google Fonts are imported for potential use from Oswald fonts into assests\css\style.css. 
+    -   Google Fonts are imported for potential use from Oswald fonts by assets\css\style.css. 
 
 -   ### Wireframes
 
