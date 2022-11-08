@@ -158,9 +158,8 @@ function showChosenTextItem(TextItemNumber) {
                 button.addEventListener('click', () => processlefthook());
             }
 
-
-            // consider adding images to buttons - removed for accessibility
-            //            button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
+            // considered adding images to buttons - removed for accessibility
+            // i.e. button.style.backgroundImage = "url('./assets/images/herringbone.avif')";
 
             button.style.backgroundColor = "black";
 
