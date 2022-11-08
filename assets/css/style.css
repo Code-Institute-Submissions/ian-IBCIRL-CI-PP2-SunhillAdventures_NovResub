@@ -29,8 +29,8 @@ body {
 .container {
     background-color: white;
     color: black;
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     position: absolute;
     border: 1px solid black;
 }
@@ -90,9 +90,9 @@ h6 {
 #legendtext {
     color: black;
     background: white;
-    margin: 2%;
+    margin: 1%;
     width: auto;
-    padding: 2%;
+    padding: 1%;
     border: 1px solid black;
 }
 
@@ -102,7 +102,7 @@ h6 {
 
 #scenetext {
     padding: 2%;
-    margin: 2%;
+    margin: 1%;
     color: black;
     background: white;
     text-align: center;
@@ -117,15 +117,17 @@ h6 {
     gap: 5%;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    border: 1px solid black;
 }
 
 .fight-span {
     background-color: white;
     margin: 1%;
-    padding: 2%;
+    padding: 3%;
     gap: 5%;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    border: 1px solid black;
 }
 
 .keyspressed-span {
@@ -140,7 +142,7 @@ h6 {
 footer {
     color: black;
     background: white;
-    width: 51%;
+    width: 100%;
     border: 1px solid black;
 }
 
@@ -164,6 +166,14 @@ footer {
 
 }
 
+a{
+    color: white;
+}
+
+a:hover{
+    color: lightgreen;
+}
+
 /* arrange a hover style for the mouse hovering a button */
 .btn:hover {
     border-color: RED;
@@ -173,7 +183,7 @@ footer {
 }
 
 #menu {
-    padding: 0.75rem;
+    padding: 4%;
     background-color: black;
     position: relative;
     top: 1%;
@@ -202,7 +212,6 @@ footer {
         clear: left;
         float: left;
         
-        width: 91%;
     }
 
 }
