@@ -151,7 +151,7 @@ footer {
 .btnheadertext {
     color: white;
     background-color:black;
-    color: black;
+    
     margin: 1%;
     padding: 2%;
     border: 1px solid darkslategray;
@@ -184,7 +184,7 @@ a:hover{
 }
 
 #menu {
-    padding: 4%;
+    padding: 2%;
     background-color: black;
     position: relative;
     top: 1%;
