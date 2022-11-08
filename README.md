@@ -177,7 +177,6 @@ My goals have been to:
 -   [GitHub:](https://github.com/) is used as the repository for the source code, and GitPages for hosting.
 - [ Chrome DevTools](https://developer.chrome.com/docs/devtools/) for checking and testing the site.
 -   [Google Fonts:](https://fonts.google.com/) for 'Lato' and 'Oswald' fonts.
--   [Font Awesome:](https://fontawesome.com/) was used to add icons for visual cues.
 -   [Convertio JPG to avif:](https://convertio.co/jpg-avif/) to convert PNG and JPG to avif images.
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
@@ -218,6 +217,8 @@ Good results all round.
 
 Index HTML Results
 <img src="./assets/docs/htmlvalidation.png">
+<img src="./assets/docs/abouthtmlvalidation.png">
+<img src="./assets/docs/404htmlvalidation.png">
 
 
 Index CSS Results
