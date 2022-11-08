@@ -151,10 +151,10 @@ footer {
 .btnheadertext {
     color: white;
     background-color:black;
-    
+    color: black;
     margin: 1%;
     padding: 2%;
-    border: 1px solid black;
+    border: 1px solid darkslategray;
 }
 
 /* style the individual buttons */
