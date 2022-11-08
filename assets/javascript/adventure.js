@@ -115,13 +115,13 @@ function showChosenTextItem(TextItemNumber) {
     textElement.innerText = textItem.text;
 
     // set the background for the main div (or a default background)
-    let urlLocation = textItem.Imgsrc || './assets/images/parquet1.avif';
+    let urlLocation = textItem.Imgsrc || './assets/images/pexels-jonas-wilson-10541685-sm.avif';
     console.log("URL location is: ", urlLocation);
     urlLocation = "url('" + urlLocation + "')";
     console.log("URL location is: ", urlLocation);
 
     mainDiv.style.backgroundImage = urlLocation;
-    // e.g. url('/assets/images/parquet1.avif')
+    // e.g. url('/assets/images/pexels-jonas-wilson-10541685-sm.avif')
 
     const legtext = document.getElementById("legendtext");
     legtext.innerText = `scene #${textItem.item}`;
@@ -500,13 +500,13 @@ function handleKeys(event) {
 const textItems = [{
         item: 1,
         text: "You wake up on a wooden floor, in a dimly lit room.",
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
                 identity: "Button1",
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -540,12 +540,12 @@ const textItems = [{
     {
         item: 2,
         text: "You wake up on a cold white marble floor.",
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -576,13 +576,13 @@ const textItems = [{
     },
     {
         item: 3,
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         text: "You wake up on a green and white marble floor",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -613,13 +613,13 @@ const textItems = [{
     },
     {
         item: 4,
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         text: "You wake up on a rough limestone floor.",
         option: [{
                 op: 1,
                 text: "Look around",
                 nextText: 6,
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 setState: {
                     roomlayout: true,
                     hammer: false
@@ -652,11 +652,11 @@ const textItems = [{
     {
         item: 5,
         text: "You wake up on a cold pink granite floor.",
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
                 text: "Look around",
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
@@ -684,11 +684,11 @@ const textItems = [{
     {
         item: 6,
         text: "You see a door behind you.",
-        Imgsrc: "./assets/images/parquet1.avif",
+        Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
                 text: "Stand up, avoiding the hanging light.",
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 nextText: 8,
             },
             {
@@ -752,7 +752,7 @@ const textItems = [{
         option: [{
                 op: 1,
                 text: "Look around",
-                Imgsrc: "./assets/images/parquet1.avif",
+                Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
                 nextText: 6,
                 setState: {
                     roomlayout: true,
