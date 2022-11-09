@@ -182,6 +182,7 @@ My goals have been to:
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 -   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
 -   [JSHint](https://jshint.com/) was used to check for Javascript errors and recommendations
+- [Squoosh](https://squoosh.app/editor) was a better AVIF converter and preserved colors on IOS/Safari 16
 
 ## Testing 
 * [Back to index](#index) 
@@ -295,6 +296,11 @@ Result = PASS
         - found helpful code here https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
     4)  Having trouble getting final update for win/lose display update before
         alert. Tried window.location.reload() before alert. Will keep trying.
+    5)  Had to use AVIF image format to get faster Lighthouse performance results. 
+        However, initial compression resulted in incorrect colors. 
+        So I found - [Squoosh](https://squoosh.app/editor) was a better AVIF converter 
+        and preserved colors on IOS/Safari 16, which is needed to see AVIF on Apple 
+        phones, laptops and desktops.
 
 
 ## Deployment
