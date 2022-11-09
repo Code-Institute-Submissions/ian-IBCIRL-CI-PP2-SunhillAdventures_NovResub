@@ -56,8 +56,8 @@ function startGame(inputx) {
 
     let PlayerBarDiv = document.getElementById('player');
     let GaolerBarDiv = document.getElementById('gaoler');
-    PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
-    GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
+    PlayerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.gaolerhealth) + '</h3>';
 
     PlayerBarDiv.style.backgroundColor = 'lightgreen';
     GaolerBarDiv.style.backgroundColor = 'lightblue';
@@ -197,8 +197,8 @@ function processdefend() {
 
     state.gaolerhealth -= hammerimpact;
 
-    PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
-    GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
+    PlayerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.gaolerhealth) + '</h3>';
 
     let pwidth = state.playerhealth / 13 + 20;
     PlayerBarDiv.style.width = pwidth + '%';
@@ -248,8 +248,8 @@ function processrighthook() {
 
     state.gaolerhealth -= hammerimpact;
 
-    PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
-    GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
+    PlayerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.gaolerhealth) + '</h3>';
 
     let pwidth = state.playerhealth / 13 + 20;
     PlayerBarDiv.style.width = pwidth + '%';
@@ -293,8 +293,8 @@ function processlefthook() {
 
     // no hammer in left hand...
 
-    PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
-    GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
+    PlayerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.playerhealth) + '</h3>';
+    GaolerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.gaolerhealth) + '</h3>';
 
     let pwidth = state.playerhealth / 13 + 20;
     PlayerBarDiv.style.width = pwidth + '%';
@@ -458,8 +458,8 @@ function handleKeys(event) {
 
             state.gaolerhealth -= hammerimpact;
 
-            PlayerBarDiv.innerHTML = '<h3>Health: ' + (state.playerhealth) + '</h3>';
-            GaolerBarDiv.innerHTML = '<h3>Health: ' + (state.gaolerhealth) + '</h3>';
+            PlayerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.playerhealth) + '</h3>';
+            GaolerBarDiv.innerHTML = '<h3>Health:<br> ' + (state.gaolerhealth) + '</h3>';
 
             // This just changes the upDiv and other buttons back to white after 75ms
             setTimeout(function () {
