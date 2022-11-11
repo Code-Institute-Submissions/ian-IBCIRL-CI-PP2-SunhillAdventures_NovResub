@@ -199,7 +199,7 @@ My goals have been to:
     -   Criteria 1.1 - I have added navigation to the about page and the 404 page, fixing other link issues there. 
         These were not previously finally tested, as identified as nice to haves in meetups.
     -   Criteria 1.2 - I have eliminated contrast ratio issues by reverting to black on white or vice versa, 
-        to eliminate any accessibility risk.
+        to eliminate any accessibility risk. I changed the player/gaoler health text background to address this risk while using some colour.
     -   Criteria 1.4 - I have eliminated image backgrounds from buttons and changed the background and 
         put black text with white background where previously text background was transparent, and an accessibility risk.
     -   Criteria 1.5 - I have eliminated multiple background images and settled on a single image that 
