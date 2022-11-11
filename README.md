@@ -197,42 +197,31 @@ My goals have been to:
 -   ### CI feedback
     Following CI feedback, I have addressed the following issues:
     -   Criteria 1.1 - I have added navigation to the about page and the 404 page, fixing other link issues there. 
-
         These were not previously finally tested, as identified as nice to haves in meetups.
     -   Criteria 1.2 - I have eliminated contrast ratio issues by reverting to black on white or vice versa, 
-
         to eliminate any accessibility risk.
     -   Criteria 1.4 - I have eliminated image backgrounds from buttons and changed the background and 
-
         put black text with white background where previously text background was transparent, and an accessibility risk.
     -   Criteria 1.5 - I have eliminated multiple background images and settled on a single image that 
-
         captures the spirit of the game, relying on text descriptions to convey the scene.
     -   Criteria 1.8 - I have addressed readme image issues for file type case, so workflow is more visible, without compressing sections, 
-
         and added a direct link to the fight scene which was previously there, but undiscovered by superficial game play, and readme workflow filetype issues, 
-
         if the player did not discover the door to the fight scene, which i have also highlighted in the about.
     -   Criteria 1.9 - as above, i have ensured solid white or black backgrounds with the 
-
         black or white text respectively, to ensure text does not get lost in images and result in accessibility risk.
     -   Criteria 2.2 - I have revisited nice to have about and 404 pages to ensure they also meet HTML validation, 
-
         and rechecked the main index.html
     -   Criteria 2.8 - I have revisited the nice to have about and 404 pages to ensure all links work as well as the 
-
         header link which previously worked.
     -   Criteria 3.4 - I have fixed broken links on 404 page.
     -   Criteria 4.7 - I have moved the javascript load to the end of the file in the correct location just above the closing body tag
     -   Criteria 4.9 - I have changed all file types to lower case. These were generated on a PC so needed manual changing.
     -   Criteria 4.10 - I have moved the javascript to an assets subfolder
     -   Criteria 6.3 - Website is fully functional and player and gaoler health did previously change but 
-
         had to make fight sequence more obvious to superficial examination.
     -   Criteria 6.4 - resolved about.html javascript issues, and put onclick instructions that don't require javascript.
     -   Criteria 6.5 - resolved directory structure and file locations for javascript
     -   Additional - cleaned up console logging with logic to prevent undefined output. Left some in as useful to show evolution and purpose of code.
-    
         Would love to do more code refactoring.
 
 
