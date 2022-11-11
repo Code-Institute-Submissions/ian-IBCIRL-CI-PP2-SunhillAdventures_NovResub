@@ -231,7 +231,9 @@ My goals have been to:
         had to make fight sequence more obvious to superficial examination.
     -   Criteria 6.4 - resolved about.html javascript issues, and put onclick instructions that don't require javascript.
     -   Criteria 6.5 - resolved directory structure and file locations for javascript
-    -   Additional - cleaned up console logging with logic to prevent undefined output. Would love to do more code refactoring.
+    -   Additional - cleaned up console logging with logic to prevent undefined output. Left some in as useful to show evolution and purpose of code.
+    
+        Would love to do more code refactoring.
 
 
     Screenshots of the responsiveness are here.
