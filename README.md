@@ -175,14 +175,14 @@ My goals have been to:
 -   [Balsamiq:](https://balsamiq.com/) for wireframes during the design process.
 -   [Git:](https://git-scm.com/) was used for version control in the Gitpod environment to commit to Git, with comments, and Push to GitHub and publish to the public cloud.
 -   [GitHub:](https://github.com/) is used as the repository for the source code, and GitPages for hosting.
-- [ Chrome DevTools](https://developer.chrome.com/docs/devtools/) for checking and testing the site.
+-   [Chrome DevTools](https://developer.chrome.com/docs/devtools/) for checking and testing the site.
 -   [Google Fonts:](https://fonts.google.com/) for 'Lato' and 'Oswald' fonts.
 -   [Convertio JPG to avif:](https://convertio.co/jpg-avif/) to convert PNG and JPG to avif images.
 -   [WAVE evaluation tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/) to test accessibility and other errors - very useful and easy to use.
 -   [WAVE results for site](https://wave.webaim.org/report#/https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/)
 -   [picture for button backgrounds](https://stackoverflow.com/questions/9415851/how-to-change-the-background-image-of-a-button-using-javascript)
 -   [JSHint](https://jshint.com/) was used to check for Javascript errors and recommendations
-- [Squoosh](https://squoosh.app/editor) was a better AVIF converter and preserved colors on IOS/Safari 16
+-   [Squoosh](https://squoosh.app/editor) was a better AVIF converter and preserved colors on IOS/Safari 16
 
 ## Testing 
 * [Back to index](#index) 
@@ -193,13 +193,50 @@ My goals have been to:
     -   Updating responsiveness score with AVIF rather than PNG results in images not loading on older Apple iOS - does work on iOS 16 now.
     -   As the manual testing section will show, i have successfully deployed responsive initial and subsequent stages of the game.
 
+
+-   ### CI feedback
+    Following CI feedback, I have addressed the following issues:
+    -   Criteria 1.1 - I have added navigation to the about page and the 404 page, fixing other link issues there. 
+
+        These were not previously finally tested, as identified as nice to haves in meetups.
+    -   Criteria 1.2 - I have eliminated contrast ratio issues by reverting to black on white or vice versa, 
+
+        to eliminate any accessibility risk.
+    -   Criteria 1.4 - I have eliminated image backgrounds from buttons and changed the background and 
+
+        put black text with white background where previously text background was transparent, and an accessibility risk.
+    -   Criteria 1.5 - I have eliminated multiple background images and settled on a single image that 
+
+        captures the spirit of the game, relying on text descriptions to convey the scene.
+    -   Criteria 1.8 - I have addressed readme image issues for file type case, so workflow is more visible, without compressing sections, 
+
+        and added a direct link to the fight scene which was previously there, but undiscovered by superficial game play, and readme workflow filetype issues, 
+
+        if the player did not discover the door to the fight scene, which i have also highlighted in the about.
+    -   Criteria 1.9 - as above, i have ensured solid white or black backgrounds with the 
+
+        black or white text respectively, to ensure text does not get lost in images and result in accessibility risk.
+    -   Criteria 2.2 - I have revisited nice to have about and 404 pages to ensure they also meet HTML validation, 
+
+        and rechecked the main index.html
+    -   Criteria 2.8 - I have revisited the nice to have about and 404 pages to ensure all links work as well as the 
+
+        header link which previously worked.
+    -   Criteria 3.4 - I have fixed broken links on 404 page.
+    -   Criteria 4.7 - I have moved the javascript load to the end of the file in the correct location just above the closing body tag
+    -   Criteria 4.9 - I have changed all file types to lower case. These were generated on a PC so needed manual changing.
+    -   Criteria 4.10 - I have moved the javascript to an assets subfolder
+    -   Criteria 6.3 - Website is fully functional and player and gaoler health did previously change but 
+
+        had to make fight sequence more obvious to superficial examination.
+    -   Criteria 6.4 - resolved about.html javascript issues, and put onclick instructions that don't require javascript.
+    -   Criteria 6.5 - resolved directory structure and file locations for javascript
+    -   Additional - cleaned up console logging with logic to prevent undefined output. Would love to do more code refactoring.
+
+
     Screenshots of the responsiveness are here.
     <img src="./assets/docs/responsive.png">  
-    
-    and an earlier version here.
-
-    <img src="./assets/docs/responsivenesstestingscreen2.png">  
-    
+      
 
 -   [JSHint](https://jshint.com/) was used to test for Javascript errors and recommendations
 

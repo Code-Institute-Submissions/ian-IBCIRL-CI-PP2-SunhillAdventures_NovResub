@@ -3,7 +3,7 @@ let adventure = "Your adventure starts here !";
 console.log(adventure);
 
 
-// control whether to print alerts and console messages.
+// control whether to print some alerts and console messages.
 let debugcheck = 0;
 
 // state is initially an empty object.
@@ -142,7 +142,7 @@ function showChosenTextItem(TextItemNumber) {
             button.classList.add('btn');
 
             if (option.identity) {
-                console.log("option identity is: ", option.identity)
+                console.log("option identity is: ", option.identity);
                 // set the id for the new button
                 button.id = option.identity;
             }
