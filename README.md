@@ -7,7 +7,7 @@ Welcome to my repository for PP2.
 
 This project is deployed at: https://ian-ibcirl.github.io/CI-PP2-SunhillAdventures/ 
 
-The last update to this file was: **November 8th, 2022**
+The last update to this file was: **November 14th, 2022**
 
 ## Gitpod Reminders
 
@@ -311,7 +311,9 @@ Result = PASS
 
 ### Known bugs
 
-- None currently identified.
+- No technical bugs identified, although the logic behind the hammer needs further work, as it's not clear if the desired advantage is being applied.
+- Also need to work on the wider logic to stop the hammer scene being replayed and make it more clear, to suggest the hammer was dropped and needs to be picked up again, or some such story flow.
+- Intention of defending is for gaoler health to still go down due to exhaustion if not actual attack so added trick shot to defence to support decreased gaoler health.
 - Over the course of the project, 
     1) various layout issues with 
         - horizontal scrolling and more

@@ -927,7 +927,7 @@ const textItems = [{
             },
             {
                 op: 3,
-                text: "Defend (D)",
+                text: "Defend & trick shot (D)",
                 identity: "DpressedBtn",
                 nextText: 13,
                 setState: {
