@@ -498,7 +498,7 @@ function handleKeys(event) {
 // and what their action choices or options are.
 const textItems = [{
         item: 1,
-        text: "You wake up on a wooden floor, in a dimly lit room.",
+        text: "You have been moved to room #1 and wake up on a wooden floor, in a dimly lit room.",
         Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
@@ -538,7 +538,7 @@ const textItems = [{
     },
     {
         item: 2,
-        text: "You wake up on a cold white marble floor.",
+        text: "You have been moved to room #2 and you wake up on a cold white marble floor.",
         Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
@@ -576,7 +576,7 @@ const textItems = [{
     {
         item: 3,
         Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
-        text: "You wake up on a green and white marble floor",
+        text: "You have been moved to room #3 and you wake up on a green and white marble floor",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -613,7 +613,7 @@ const textItems = [{
     {
         item: 4,
         Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
-        text: "You wake up on a rough limestone floor.",
+        text: "You have been moved to room #4 and you wake up on a rough limestone floor.",
         option: [{
                 op: 1,
                 text: "Look around",
@@ -650,7 +650,7 @@ const textItems = [{
 
     {
         item: 5,
-        text: "You wake up on a cold pink granite floor.",
+        text: "You have been moved to room #5 and you wake up on a cold pink granite floor.",
         Imgsrc: "./assets/images/pexels-jonas-wilson-10541685-sm.avif",
         option: [{
                 op: 1,
