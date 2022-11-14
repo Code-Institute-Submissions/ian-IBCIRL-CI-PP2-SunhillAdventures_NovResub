@@ -52,6 +52,7 @@ My goals have been to:
 15) I added health bar
 16) I added game completion notification (win/lose) followed by restart
 
+17) I updated some of the game messages to make the results more obvious and document an issue with the hammer logic.
 
 ------
 
@@ -397,6 +398,8 @@ I have continually developed this repository to help give you the best experienc
 **27 September 2022:** significantly updated readme and corrected validator reccomendations.
 
 **8 November 2022:** corrected accessibility colours, spacing and added direct to fight option.
+
+**14 November 2022:** changed some text and flow logic to support hammer and defending mechanics. More work needed.
 
 ------
 
