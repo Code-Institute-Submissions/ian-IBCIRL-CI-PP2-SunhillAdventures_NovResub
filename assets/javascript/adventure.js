@@ -730,7 +730,7 @@ const textItems = [{
             {
                 op: 2,
                 text: "Ignore the hammer",
-                nextText: 7,
+                nextText: 6,
             },
             {
                 op: 3,
